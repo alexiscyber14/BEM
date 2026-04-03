@@ -33,14 +33,10 @@ def get_ipaddress():
    ip_address = socket.gethostbyname(host_name) 
    return "http://" + ip_address + ":4200"
 
-#ALLOWED_HOSTS = ["*",'applied-home-health-network-production.up.railway.app', 'web-production-9a69.up.railway.app','www.appliedhhn.com','web-production-fec8.up.railway.app', 'appliedhhn.com/']
-#CSRF_TRUSTED_ORIGINS = [get_ipaddress(),'https://applied-home-health-network-production.up.railway.app','https://web-production-9a69.up.railway.app', 'https://web-production-fec8.up.railway.app', 'https://www.appliedhhn.com', 'https://appliedhhn.com']
+ALLOWED_HOSTS = ["*", 'bem-production.up.railway.app', ]
+CSRF_TRUSTED_ORIGINS = [get_ipaddress(),'https://bem-production.up.railway.app/',]
 
 
-ALLOWED_HOSTS = []
-
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
