@@ -1,0 +1,204 @@
+<section class="testimonials-suite">
+    <div class="suite-wrapper">
+        
+        <header class="suite-header scroll-reveal">
+            <div class="header-indicator">
+                <span class="pulse-gold"></span>
+                <span class="label">CLIENT_REPORTS</span>
+            </div>
+            <h2 class="suite-title">
+            
+                         {% if request.resolver_match.url_name == 'booking' %}
+                      
+                        From Our<br><span class="gold-outline"> Clients</span>
+                    {% else %}
+   Voices of <br><span class="gold-outline">The Culture</span>
+                    {% endif %}
+
+
+
+         
+            </h2>
+        </header>
+
+        <div class="testimonial-container">
+            
+            <div class="testimonial-item scroll-reveal">
+                <div class="quote-icon">“</div>
+                <div class="testimonial-content">
+                    <p class="quote-text">
+                        The level of technical precision BEM brought to our documentary was unmatched. 
+                        They don't just film; they capture the soul of the story with cinematic authority.
+                    </p>
+                    <div class="client-meta">
+                        <span class="client-name">Marcus Thorne</span>
+                        <span class="client-role">Director, Global Arts Collective</span>
+                    </div>
+                </div>
+                <div class="project-tag">DOCUMENTARY // 2026</div>
+            </div>
+
+            <div class="testimonial-item scroll-reveal">
+                <div class="quote-icon">“</div>
+                <div class="testimonial-content">
+                    <p class="quote-text">
+                        Our wedding film feels like a high-end fashion campaign. The blend of 
+                        photography and film was seamless. Best investment we made.
+                    </p>
+                    <div class="client-meta">
+                        <span class="client-name">Elena Ross</span>
+                        <span class="client-role">Private Client</span>
+                    </div>
+                </div>
+                <div class="project-tag">WEDDING // CINEMA</div>
+            </div>
+
+            <div class="testimonial-item scroll-reveal">
+                <div class="quote-icon">“</div>
+                <div class="testimonial-content">
+                    <p class="quote-text">
+                        BEM is the only production house that understands the intersection of 
+                        music and visual storytelling. Our music video exceeded all expectations.
+                    </p>
+                    <div class="client-meta">
+                        <span class="client-name">Jaxx V.</span>
+                        <span class="client-role">Recording Artist</span>
+                    </div>
+                </div>
+                <div class="project-tag">MUSIC PRODUCTION</div>
+            </div>
+
+        </div>
+
+        <div class="suite-footer scroll-reveal">
+            <div class="stat-box">
+                <span class="stat-num">150+</span>
+                <span class="stat-label">PROJECTS DELIVERED</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">CLIENT RETENTION</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.testimonials-suite {
+    background: #000;
+    color: #fff;
+    padding: 60px 5%;
+    border-top: 1px solid #111;
+    position: relative;
+}
+
+.suite-wrapper { max-width: 1200px; margin: 0 auto; }
+
+/* HEADER */
+.suite-header { margin-bottom: 100px; }
+
+.header-indicator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.pulse-gold {
+    width: 6px; height: 6px;
+    background: #D4AF37;
+    border-radius: 50%;
+    animation: simple-pulse 2s infinite;
+}
+
+.suite-title {
+    font-size: clamp(40px, 6vw, 80px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.gold-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px #D4AF37;
+}
+
+/* TESTIMONIAL ITEMS */
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Tight grid for a "list" feel */
+}
+
+.testimonial-item {
+    border-top: 1px solid #111;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 80px 1fr 200px;
+    gap: 40px;
+    position: relative;
+    transition: background 0.4s ease;
+}
+
+.testimonial-item:last-child { border-bottom: 1px solid #111; }
+
+.testimonial-item:hover {
+    background: linear-gradient(90deg, #050505 0%, transparent 100%);
+}
+
+.quote-icon {
+    font-size: 60px;
+    font-family: serif;
+    color: #D4AF37;
+    line-height: 1;
+}
+
+.quote-text {
+    font-size: clamp(20px, 2.5vw, 28px);
+    line-height: 1.4;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+.client-meta { display: flex; flex-direction: column; gap: 5px; }
+.client-name { font-weight: 800; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
+.client-role { color: #555; font-size: 12px; text-transform: uppercase; }
+
+.project-tag {
+    font-family: monospace;
+    font-size: 10px;
+    color: #333;
+    text-align: right;
+    letter-spacing: 2px;
+    align-self: center;
+}
+
+/* FOOTER STATS */
+.suite-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-top: 80px;
+}
+
+.stat-box { display: flex; flex-direction: column; }
+.stat-num { font-size: 40px; font-weight: 900; color: #D4AF37; }
+.stat-label { font-family: monospace; font-size: 10px; color: #444; letter-spacing: 2px; }
+
+@keyframes simple-pulse {
+    0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; }
+}
+
+@media (max-width: 900px) {
+    .testimonial-item { grid-template-columns: 1fr; gap: 20px; padding: 50px 0; }
+    .project-tag { text-align: left; margin-top: 20px; }
+    .suite-footer { flex-direction: column; gap: 40px; }
+}
+</style>

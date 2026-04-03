@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/events.css' %}">
+{% endblock %}
+{% block content %}
+<section class="hero-cinematic">
+    <div class="hero-bg">
+        <div class="video-scrim"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="your-cinematic-reel.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">PREMIUM EVENT COVERAGE</div>
+            <h1 class="hero-title">VISUAL <br><span class="gold-text">STORYTELLING.</span></h1>
+            <p class="hero-desc">Capturing high-stakes events with cinematic precision. From short-form recaps to 4K production highlights.</p>
+            
+            <div class="hero-cta-group">
+                <button class="btn-main" onclick="scrollToSection('recap')">
+                    VIEW LATEST WORK
+                </button>
+            </div>
+        </div>
+
+        <nav class="hero-nav">
+            <div class="nav-item" onclick="scrollToSection('recap')">
+                <span class="nav-num">01</span>
+                <div class="nav-label">
+                    <strong>EVENT RECAPS</strong>
+                    <span>Short-Form Content</span>
+                </div>
+            </div>
+            <div class="nav-item" onclick="scrollToSection('high')">
+                <span class="nav-num">02</span>
+                <div class="nav-label">
+                    <strong>PRODUCTION HIGHLIGHTS</strong>
+                    <span>Extended Cuts</span>
+                </div>
+            </div>
+            <div class="nav-item" onclick="scrollToSection('stills')">
+                <span class="nav-num">03</span>
+                <div class="nav-label">
+                    <strong>EVENT STILLS</strong>
+                    <span>High-Res Photography</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <span>SCROLL TO EXPLORE</span>
+    </div>
+</section>
+
+<section class="recap-section">
+    <div class="section-header">
+        <span class="sub-label">01 // SHORT-FORM</span>
+        <h2 class="section-title">Event Recaps</h2>
+    </div>
+
+    <div class="recap-grid">
+        {% for vid in recaps %}
+        <div class="recap-item video-detailer" id="recap-wrap-recap-{{ forloop.counter }}">
+            <div class="video-window">
+                <div id="player-recap-{{ forloop.counter }}" 
+                     class="yt-player-element" 
+                     data-video-link="{{ vid.embed_link }}"></div>
+                
+                <div class="video-interface" id="interface-recap-{{ forloop.counter }}">
+                    <img src="{{ vid.imageURL }}" alt="{{ vid.title }}" class="video-placeholder">
+                    
+                    <div class="interface-content">
+                        <button class="play-action-btn" onclick="playProjectVideo('recap-{{ forloop.counter }}')">
+                            <span class="play-triangle"></span>
+                            <span class="btn-text">VIEW RECAP</span>
+                        </button>
+                        <button class="detail-action-btn show-video-detail-btn" style="z-index: 1000;">
+                            <span class="play-triangle"></span>
+                            <span class="btn-text">....</span>
+                        </button>
+                    </div>
+
+                    <div class="video-meta-footer">
+                        <div class="footer-left">
+                            <button class="control-btn" id="play-pause-recap-{{ forloop.counter }}" onclick="togglePlayPause('recap-{{ forloop.counter }}')">
+                                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            </button>
+
+                            <button class="control-btn" onclick="toggleMute('recap-{{ forloop.counter }}')">
+                                <svg viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM3 9v6h4l5 5V4L7 9H3z" fill="currentColor"/></svg>
+                            </button>
+                            
+                            <input type="range" class="volume-slider" min="0" max="100" value="50" oninput="setVolume('recap-{{ forloop.counter }}', this.value)">
+                        </div>
+
+                        <div class="footer-center">
+                            <input type="range" class="progress-bar" id="progress-recap-{{ forloop.counter }}" min="0" max="100" value="0" oninput="scrubVideo('recap-{{ forloop.counter }}', this.value)">
+                        </div>
+
+                        <div class="footer-right">
+                            <button class="control-btn" onclick="toggleFullscreen('recap-{{ forloop.counter }}')">
+                                <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recap-description">
+                <h3>{{ vid.title }}</h3>
+                <p>{{ vid.description|truncatewords:15 }}</p>
+            </div>
+        </div>
+       <div class="vid-details">
+            <div class="vid-details-wrapper">
+          <ul class="features">
+         <button class="close-detail">x</button>
+            <h3>{{vid.title}}</h3>
+            <p class="des">{{ vid.description|linebreaksbr }}</p>
+            <br>
+            <p><span>Season N.</span> {{vid.season}}</p>
+            <p><span>RUNTIME:</span> {{vid.runtime}}</p>
+            <p><span>RELEASE DATE:</span> {{vid.release_date}}</p>
+            <p><span>LANGUAGES:</span> {{vid.language}}</p>
+            <p><span>PLATFORM:</span> {{vid.platform}}</p>
+            <br>
+            <p><span>Credits:</span></p>
+            <p>{{ vid.credits_info|linebreaksbr }}</p>
+            <br>
+            <p><span>SPEAKERS:</span></p>
+            <p>{{ vid.speakers|linebreaksbr }}</p>
+            <br>
+            <p><span>FILMING LOCATION:</span> {{vid.filming_location}}</p>
+            <p><span>PRODUCTION COMPANY:</span> {{vid.production_company}}</p>
+            <p><span>DIRECTOR:</span> {{vid.director}}</p>
+            <p><span>PRODUCER:</span> {{vid.producer}}</p>  
+            <p><span>CINEMATOGRAPHER:</span> {{vid.cinematographer}}</p>
+            <p><span>EDITOR:</span> {{vid.editor}}</p>
+            <p><span>PLATFORM:</span> {{vid.platform}}</p>
+            <p><span>RIGHTS:</span> All Rights Reserved</p>
+          </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="recap-section">
+    <div class="section-header">
+        <span class="sub-label">03 // EXTENDED CUTS</span>
+        <h2 class="section-title">Production Highlights</h2>
+    </div>
+
+    <div class="recap-grid">
+        {% for vid in highlights %}
+        <div class="recap-item video-detailer" id="recap-wrap-high-{{ forloop.counter }}">
+            <div class="video-window">
+                <div id="player-high-{{ forloop.counter }}" 
+                     class="yt-player-element" 
+                     data-video-link="{{ vid.embed_link }}"></div>
+                
+                <div class="video-interface" id="interface-high-{{ forloop.counter }}">
+                    <img src="{{ vid.imageURL }}" alt="{{ vid.title }}" class="video-placeholder">
+                    
+                    <div class="interface-content">
+                        <button class="play-action-btn" onclick="playProjectVideo('high-{{ forloop.counter }}')">
+                            <span class="play-triangle"></span>
+                            <span class="btn-text">VIEW RECAP</span>
+                        </button>
+                        <button class="detail-action-btn show-video-detail-btn">
+                            <span class="play-triangle"></span>
+                            <span class="btn-text">....</span>
+                        </button>
+                    </div>
+
+                    <div class="video-meta-footer">
+                        <div class="footer-left">
+                            <button class="control-btn" id="play-pause-high-{{ forloop.counter }}" onclick="togglePlayPause('high-{{ forloop.counter }}')">
+                                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                            </button>
+
+                            <button class="control-btn" onclick="toggleMute('high-{{ forloop.counter }}')">
+                                <svg viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM3 9v6h4l5 5V4L7 9H3z" fill="currentColor"/></svg>
+                            </button>
+                            
+                            <input type="range" class="volume-slider" min="0" max="100" value="50" oninput="setVolume('high-{{ forloop.counter }}', this.value)">
+                        </div>
+
+                        <div class="footer-center">
+                            <input type="range" class="progress-bar" id="progress-high-{{ forloop.counter }}" min="0" max="100" value="0" oninput="scrubVideo('high-{{ forloop.counter }}', this.value)">
+                        </div>
+
+                        <div class="footer-right">
+                            <button class="control-btn" onclick="toggleFullscreen('high-{{ forloop.counter }}')">
+                                <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="currentColor"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recap-description">
+                <h3>{{ vid.title }}</h3>
+                <p>{{ vid.description|truncatewords:15 }}</p>
+            </div>
+        </div>
+               <div class="vid-details">
+            <div class="vid-details-wrapper">
+          <ul class="features">
+         <button class="close-detail">x</button>
+            <h3>{{vid.title}}</h3>
+            <p class="des">{{ vid.description|linebreaksbr }}</p>
+            <br>
+            <p><span>Season N.</span> {{vid.season}}</p>
+            <p><span>RUNTIME:</span> {{vid.runtime}}</p>
+            <p><span>RELEASE DATE:</span> {{vid.release_date}}</p>
+            <p><span>LANGUAGES:</span> {{vid.language}}</p>
+            <p><span>PLATFORM:</span> {{vid.platform}}</p>
+            <br>
+            <p><span>Credits:</span></p>
+            <p>{{ vid.credits_info|linebreaksbr }}</p>
+            <br>
+            <p><span>SPEAKERS:</span></p>
+            <p>{{ vid.speakers|linebreaksbr }}</p>
+            <br>
+            <p><span>FILMING LOCATION:</span> {{vid.filming_location}}</p>
+            <p><span>PRODUCTION COMPANY:</span> {{vid.production_company}}</p>
+            <p><span>DIRECTOR:</span> {{vid.director}}</p>
+            <p><span>PRODUCER:</span> {{vid.producer}}</p>  
+            <p><span>CINEMATOGRAPHER:</span> {{vid.cinematographer}}</p>
+            <p><span>EDITOR:</span> {{vid.editor}}</p>
+            <p><span>PLATFORM:</span> {{vid.platform}}</p>
+            <p><span>RIGHTS:</span> All Rights Reserved</p>
+          </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<section class="photo-section stills-section">
+    <div class="section-header">
+        <span class="sub-label">02 // STILL ARCHIVE</span>
+        <h2 class="section-title">Production Stills</h2>
+    </div>
+    <div class="photo-masonry">
+        {% for photo in photos %}
+        <div class="photo-item video-detailer {% if photo.is_large %}large{% elif photo.is_tall %}tall{% endif %}">
+            <div class="photo-wrapper">
+                <img src="{{ photo.image.url }}" alt="{{ photo.caption }}" class="main-img">
+                <div class="photo-overlay">
+                    <div class="overlay-info">
+                        <span class="photo-category">{{ photo.category }}</span>
+                        <h3>{{ photo.title }}</h3>
+                        <button class="detail-action-btn show-video-detail-btn">
+                            <span class="play-triangle"></span>
+                            <span class="btn-text">....</span>
+                        </button>
+                    </div>
+                    <button class="expand-btn" onclick="openLightbox('{{ photo.image.url }}')">
+                        VIEW FULLSCREEN
+                    </button>
+                </div>
+            </div>
+        </div>
+         <div class="vid-details">
+            <div class="vid-details-wrapper">
+          <ul class="features">
+         <button class="close-detail">x</button>
+            <h3>{{photo.title}}</h3>
+            <p class="des">{{ photo.description|linebreaksbr }}</p>
+            <br>
+            <p><span>CATEGORY.</span> {{photo.category}}</p>
+            <p><span>SEASON NO.</span> {{photo.season}}</p>
+            <p><span>PHOTOGRAPHER:</span> {{photo.photographer}}</p>
+            <p><span>STUDIO/PRODUCTION COMPANY:</span> Broken Elevator Media</p>
+            <p><span>CAPTURED DATE:</span> {{photo.captured_date}}</p>
+            <p><span>CAMERA:</span> {{photo.camera}}</p>
+            <p><span>LENSES:</span> {{photo.lens}}</p>
+            <p><span>COPYRIGHT_OWNER:</span> {{photo.copyright_owner}}</p>
+            <br>
+            <p><span>Usage rights::</span></p>
+            <p>{{ photo.usage_rights|linebreaksbr }}</p>
+           <br>
+          </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<script src="{% static 'js/events.js' %}"></script>
+{% include 'form.html' %}
+{% endblock content %}

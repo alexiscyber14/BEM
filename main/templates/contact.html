@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+{% block content %}
+<section class="contact-dark">
+    <div class="contact-container">
+        <header class="header-section scroll-reveal">
+            <h1 class="title">Contact <span class="gold-text">Us</span></h1>
+            <p class="subtitle">Reach out directly to start your next production. We respond to all serious inquiries within 24 hours.</p>
+        </header>
+        <div class="info-grid">
+            <div class="info-card scroll-reveal">
+                <span class="label">Location</span>
+                <h3 class="heading">Los Angeles</h3>
+                <p class="detail">Downtown Arts District<br>California, USA</p>
+                <div class="status-badge">Available Worldwide</div>
+            </div>
+            <div class="info-card scroll-reveal">
+                <span class="label">Direct Contact</span>
+                <div class="contact-links">
+                    <a href="mailto:hello@brokenelevatormedia.com" class="link">hello@brokenelevatormedia.com</a>
+                    <a href="tel:+12135550198" class="link">+1 (213) 555-0198</a>
+                </div>
+                <p class="detail">Production Studio Hours: 10AM — 6PM PST</p>
+            </div>
+            <div class="info-card scroll-reveal">
+                <span class="label">Social Media</span>
+                <div class="social-grid">
+                    <a href="#" class="social-box">Instagram</a>
+                    <a href="#" class="social-box">Vimeo</a>
+                    <a href="#" class="social-box">YouTube</a>
+                    <a href="#" class="social-box">LinkedIn</a>
+                </div>
+            </div>
+            <div class="info-card status-card scroll-reveal">
+                <span class="label">Booking Status</span>
+                <h3 class="heading">Now Booking</h3>
+                <p class="detail">Currently accepting briefs for Q2 & Q3 2026</p>
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'form.html' %}
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock content %}

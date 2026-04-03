@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+{% block content %}
+<section class="blog-hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="{% static 'videos/blog-hero.mp4' %}" type="video/mp4">
+  </video>
+  <div class="hero-overlayb"></div>
+  <div class="hero-contentb">
+    <span class="hero-tagb">BROKEN ELEVATOR MEDIA // THE FEED</span>
+    <h1 class="hero-titleb">Insights, Stories & Production</h1>
+    <p>Behind-the-scenes breakdowns and industry perspectives from the front lines of media creation.</p>
+  </div>
+</section>
+<div class="blog-wrapper">
+  <aside class="blog-nav">
+    <div class="search-container">
+      <input type="text" id="blogSearch" placeholder="Search the archive...">
+    </div>
+    <div class="nav-group">
+      <h4>Categories</h4>
+      <button class="nav-btn active" data-filter="all">All</button>
+      <button class="nav-btn" data-filter="insights">Industry Insights</button>
+      <button class="nav-btn" data-filter="interviews">Entrepreneur Interviews</button>
+      <button class="nav-btn" data-filter="breakdowns">Production Breakdowns</button>
+      <button class="nav-btn" data-filter="bts">Behind the Scenes</button>
+    </div>
+  </aside>
+
+  <main class="blog-content">
+    <div class="blog-grid">
+      {% for blog in blogs %}
+      <div class="blog-card" data-category="{{ blog.category }}">
+        <div class="card-img-wrapper">
+            <img src="{{ blog.imageURL }}" alt="{{ blog.title }}">
+        </div>
+        <div class="blog-info">
+          <h3>{{ blog.title }}</h3>
+          <p>{{ blog.excerpt }}</p>
+          <div class="meta">
+            <span>{{ blog.created_at|date:"M d, Y" }}</span>
+            <span class="read-more-link">Read Story →</span>
+          </div>
+          <div class="blog-actions">
+            <button class="read-btn" data-id="{{ blog.id }}">Read Article</button>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
+</div>
+
+{% include 'form.html' %}
+<div id="blogModal" class="blog-modal">
+
+  <div class="modal-body">
+      <span class="close-modal" onclick="closeBlog()">✕</span>
+    <div class="modal-header">
+      <h2 id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta" style="color: #ccc; margin-bottom: 45px;">
+      </div>
+    </div>
+    <div class="modal-content" id="modalContent"></div>
+    <div class="modal-footer-cta">
+        <p>Interested in a similar production?</p>
+        <br>
+        <button onclick="location.href='/contact/'" class="cta-mini">Get in Touch</button>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/blog.js' %}"></script>
+{% endblock content %}

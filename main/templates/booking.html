@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/booking.css' %}">
+{% endblock %}
+{% block content %}
+<section class="booking-page">
+    <div class="booking-container">
+        <div class="booking-form-area">
+            <form id="production-booking-form">
+                {% csrf_token %}
+            <div class="visual-overlay">
+                <span>PROJECT INQUIRY</span>
+                <h1>Let’s Frame Your <br>Next Vision.</h1>
+                <p>High-end cinematic production tailored to your brand's narrative.</p>
+            </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>FULL NAME</label>
+                        <input type="text" name="name" placeholder="e.g. Alexander Ssenyondo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>EMAIL ADDRESS</label>
+                        <input type="email" name="email" placeholder="alex@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>PHONE NUMBER</label>
+                        <input type="phone" name="phone" placeholder="+1234 5648-32" required>
+                    </div>
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>COMPANY | if not a company, type individual</label>
+                        <input type="phones" name="company" placeholder="company" required>
+                    </div>
+                    <div class="form-group">
+                    <label>PROJECT CATEGORY</label>
+                    <select id="main-category" name="projectcat" onchange="updateSubCategories()" class="neat-select">
+                            <option value="" disabled selected>Select a Department...</option>
+                             <option value="event">Event Production</option>
+                            <option value="cinema">Cinema & Film Production</option>
+                            <option value="music">Music Video Production</option>
+                            <option value="photography">Professional Photography</option>
+                            <option value="commercial">Commercial & Brand</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="sub-category-wrap" style="display:none;">
+                    <label>SPECIFIC REQUIREMENT</label>
+                    <select id="sub-category" name="task">
+                    </select>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label>PROJECT DESCRIPTION</label>
+                    <textarea rows="4" name="description" placeholder="Briefly describe the project goals..."></textarea>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>ESTIMATED TIMELINE</label>
+                        <input type="text" name="timeline">
+                    </div>
+                    <div class="form-group">
+                        <label>BUDGET RANGE (USD)</label>
+                        <select name="budget">
+                            <option>$300 - $1,000</option>
+                            <option>$1,000 - $3,000</option>
+                            <option>$3,000 - $7,000</option>
+                            <option>$10,000+</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="submit-booking" id="bk-sub">SUBMIT </button>
+            </form>
+        <div id="bk-status-toast" class="bstatus-toast"></div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'js/booking.js' %}"></script>
+{% include 'feed.html' %}
+{% endblock content %}

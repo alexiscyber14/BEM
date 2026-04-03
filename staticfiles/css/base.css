@@ -1,0 +1,140 @@
+.activev a{
+color:#D4AF37 !important; 
+border-bottom:2px solid #D4AF37 !important; 
+    font-weight: bold !important;
+}
+
+/* RESET */
+* { box-sizing:border-box; margin:0; padding:0; }
+html, body {height: 100%;margin: 0;}
+body { display: flex; flex-direction: column;height: 100vh; font-family:'Inter', sans-serif; color:#F5F5F5; background:#0B0B0B; }
+.main-content{flex: 1;}
+/* HEADER */
+.header { position:fixed; top:0; width:100%; z-index:100; backgound:rgba(11, 11, 11, 0.233); backdrop-filter: blur(5px); }
+.container { max-width:1400px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 40px; height:80px; }
+.logo a { color:#F5F5F5; font-size:20px; font-weight:700; letter-spacing:1px; text-decoration:none; }
+.logo a span{ color:#f5f5f5; font-weight:200; letter-spacing:0px;}
+.nav { display:flex; align-items:center; }
+.nav-links { list-style:none; display:flex; gap:30px; }
+.nav-links li a { color:#F5F5F5; text-decoration:none; font-weight:500; transition: color 0.3s ease, border-bottom 0.3s ease; }
+.nav-links li a:hover { color:#D4AF37; border-bottom:2px solid #D4AF37; }
+.cta-button { margin-left:40px; padding:10px 25px; background-color:#D4AF37; color:#0B0B0B; font-weight:600; border-radius:6px; text-decoration:none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.cta-button:hover { transform:scale(1.05); box-shadow:0 4px 15px rgba(212,175,55,0.5); }
+.hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+.hamburger span { width:25px; height:3px; background:#F5F5F5; border-radius:2px; }
+
+.hero { position:relative; height:100vh; width:100%; overflow:hidden; }
+.hero-video { position:absolute; top:0; left:0; width:100%; opacity: 0.5; height:100%; object-fit:cover; z-index:1; }
+.hero-overlay { 
+  position:relative; 
+  z-index:2; 
+display: grid;
+grid-template-columns: 1fr 1fr;
+  align-items:left; 
+  justify-content:center; 
+  text-align:center; 
+  height:100%; 
+  padding:0 40px; 
+/* The Shadow: Light at the top, Deep at the bottom */
+    background: linear-gradient(
+        to bottom,
+        rgba(5, 5, 5, 0.034) 0%,    /* Very light/transparent at the top */
+        rgba(5, 5, 5, 0.4) 40%,   /* Gradual darkening */
+        rgba(5, 5, 5, 0.8) 80%,   /* Deep shadow starts here */
+        rgba(5, 5, 5, 1) 100%     /* Full black at the very bottom */
+    );
+}
+
+.hero-overlayc1 { 
+  z-index:2; 
+  display:flex; 
+  width: 600px;
+  flex-direction:column; 
+  align-items:left; 
+  justify-content:center; 
+  text-align:center; 
+  height:100%; 
+  padding:0 0px;
+}
+
+.hero-overlay h1 {  font-family:'Bebas Neue', sans-serif; text-align: left;  font-size:6rem; line-height: 5.2rem;  font-weight:700; margin-bottom:20px; }
+.hero-overlay p { border-left: 3px solid #D4AF37;padding-left: 5px; font-size:1.20rem; max-width:700px; text-align: left; margin-bottom:0px; line-height:1.3rem; }
+.hero-buttons {  
+  right: 10%; 
+  display:flex; 
+  flex-direction: column; 
+  gap:15px; 
+  justify-content:center; 
+  align-items:flex-start;   /* prevents stretching */
+  border-right: 10px;
+  overflow: hidden;
+}
+/* The "Flex Pole" Effect */
+.hero-buttons::after {
+  content: "";
+  position: absolute;
+  right: 2.2%;
+  top: 25%; /* Starts 25% down */
+  height: 100%; /* Runs for 50% of the container height */
+  width: 15px; /* Thickness of the pole */
+  background: linear-gradient(
+    to bottom, 
+
+            #D4AF37 5%, 
+        #D4AF37 10%, 
+    #D4AF37 20%, 
+    #D4AF37 80%, 
+    transparent
+  );
+  border-radius: 10px;
+}
+
+.hero-cta  {align-self:flex-start;margin-left: auto; margin-right: -10px; width: 300px;  padding:12px 28px; transform: rotate(-15deg); border:2px solid #D4AF37; backdrop-filter:blur(5px); color:#D4AF37; text-decoration:none; font-weight:600; border-radius:0px; transition: all 0.3s ease; }
+.hero-cta:hover { background-color:#D4AF37; color:#0B0B0B; }
+.hero-cta.active { background-color:#D4AF37; color:#0B0B0B; }
+.scroll-indicator { margin-top:20px; font-size:2rem; color:#D4AF37; animation: bounce 1.5s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(10px);} }
+
+/* SERVICES */
+.services-landing { padding:100px 20px; }
+.services-landing h2 { text-align:center; font-size:2.5rem; margin-bottom:60px; }
+.services-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); grid-auto-rows: 300px; gap:20px; }
+.service-tile { position:relative; overflow:hidden; border-radius:10px; cursor:pointer; transition: transform 0.3s ease; }
+.service-tile img { width:100%; height:100%; object-fit:cover; display:block; transition: transform 0.3s ease; }
+.service-tile:hover img { transform:scale(1.1); }
+.overlay { position:absolute; bottom:0; left:0; width:100%; padding:20px; background:rgba(0,0,0,0.6); }
+.overlay h3 { margin-bottom:5px; font-size:1.25rem; }
+.overlay p { font-size:1rem; }
+
+/* FEATURED WORK */
+.featured-work { padding:100px 20px; background:#161616; }
+.featured-work h2 { text-align:center; font-size:2.5rem; margin-bottom:50px; }
+.work-carousel { display:flex; gap:20px; overflow-x:auto; scroll-snap-type: x mandatory; }
+.work-item { flex:0 0 400px; scroll-snap-align:start; border-radius:10px; overflow:hidden; }
+.work-item img { width:100%; height:100%; object-fit:cover; }
+
+/* HALL OF FRAMES */
+.hall-of-frames { padding:100px 20px; }
+.hall-of-frames h2 { text-align:center; font-size:2.5rem; margin-bottom:20px; }
+.hall-of-frames p { text-align:center; margin-bottom:40px; font-size:1.25rem; }
+.episode-grid { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.episode-card { width:250px; height:150px; overflow:hidden; border-radius:10px; }
+.episode-card img { width:100%; height:100%; object-fit:cover; }
+
+/* CTA SECTION */
+.cta-section { position:relative; background:url('cta-bg.jpg') center/cover no-repeat; padding:150px 20px; text-align:center; }
+.cta-overlay { background:rgba(0,0,0,0.6); padding:60px; border-radius:10px; display:inline-block; }
+.cta-overlay h2 { font-size:2.5rem; margin-bottom:30px; }
+
+/* FOOTER */
+
+
+/* RESPONSIVE */
+@media screen and (max-width:1024px){
+  .nav-links { display:none; }
+  .cta-button { display:none; }
+  .hamburger { display:flex; }
+  .services-grid { grid-template-columns: 1fr; grid-auto-rows: 250px; }
+  .work-item { flex:0 0 80%; }
+  .episode-grid { flex-direction:column; align-items:center; }
+}

@@ -1,0 +1,335 @@
+<section class="messageus" id="messageus">
+    <div class="message-container">
+        <div class="message-cta">
+            <h2 class="cta-title">
+             {% if request.resolver_match.url_name == 'events' %}
+                      
+                        Film Your <br><span class="flicker-gold">Legacy.</span>
+                    {% else %}
+                        {# This is your default text for the rest of the site #}
+                        Ready to <br><span class="flicker-gold">Get Started?</span>
+                    {% endif %}
+            </h2>
+            <p class="cta-sub">Broken Elevator Media is currently accepting new projects for 2026. Let’s build something that lasts.</p>
+            
+            <div class="contact-details">
+                <div class="detail-item">
+                    <span>Phone</span>
+                    <p>+1637383899</p>
+                </div>
+                <br>
+                <div class="detail-item">
+                    <span>Email</span>
+                    <p>hello@brokenelevator.media</p>
+                </div>
+                <br>
+                <div class="detail-item">
+                    <span>Studio</span>
+                    <p>Los Angeles, CA // 90012</p>
+                </div>
+                <br>
+                <div class="detail-item">
+                    <span>Instgram</span>
+                    <p>B:E Media</p>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="message-form-wrapper">
+        <form class="production-form" id="prd-form">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="exxample@__.com" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Company | <span style="text-transform: capitalize; font-size: 12px; color: whitesmoke;">Put individual if you're not a company</span></label>
+                    <input type="text" name="company" placeholder="Company" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Project Type</label>
+                    <select name="project_type">
+                        <option>Full Event Photography</option>
+                        <option>Portrait Photography</option>
+                        <option>Wedding Cinematic Package</option>
+                        <option>Premium Event Coverage</option>
+                        <option>Basic Event Coverage</option>
+                        <option>Podcast Production</option>
+                        <option>Film & Documentary Production</option>
+                        <option>Cinematic Music Videos</option>
+                        <option>High-End Commercials</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Budget</label>
+                    <input type="text" name="budget" placeholder="$2000" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Timeline</label>
+                    <input type="text" name="timeline" placeholder="one week" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="prd-submit-btn">
+                <span class="btn-text">Submit</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </form>
+            <div id="prd-status-toast" class="status-toast"></div>
+        </div>
+    </div>
+</section>
+
+<style>
+.messageus {
+    background: #000;
+    padding: 0px 0;
+    padding-bottom:100px ;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.message-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+/* CTA SIDE */
+.cta-title {
+    font-size: clamp(50px, 8vw, 110px);
+    font-weight: 900;
+    line-height: 0.85;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.flicker-gold {
+    color: #D4AF37;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.cta-sub {
+    color: #888;
+    max-width: 400px;
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.eyebrow{
+    font-size: 11px;
+}
+.detail-item span {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    color: #D4AF37;
+    font-size: 18px;
+}
+
+/* FORM SIDE */
+.production-form {
+    background: #0a0a0a;
+    padding: 60px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    position: relative;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.input-group option{
+    background-color: #333;
+}
+.input-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #D4AF37;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 20px;
+    background: #D4AF37;
+    color: #000;
+    border: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #fff;
+    transform: translateY(-5px);
+}
+
+.status-toast {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 20px 40px;
+    background: #0d0d0d;
+    color: #fff;
+    border-left: 4px solid #D4AF37;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    z-index: 10000;
+    transform: translateY(190%);
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.status-toast.show {
+    transform: translateY(0);
+}
+
+/* Success State - Glow Gold */
+.status-toast.success {
+    border-color: green;
+    color: green;
+}
+
+/* Error State - Glow Red */
+.status-toast.error {
+    border-color: #f87171;
+    color:  #f87171;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+    .message-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .production-form {
+        padding: 30px;
+    }
+}
+</style>
+<script>
+document.getElementById('prd-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = this;
+    const btn = document.getElementById('prd-submit-btn');
+    
+    // Defensive check: ensure the button exists before looking for .btn-text
+    if (!btn) {
+        console.error("Button with ID 'prd-submit-btn' not found.");
+        return;
+    }
+    
+    const btnText = btn.querySelector('.btn-text');
+    
+    // 1. Enter Loading State
+    if (btnText) btnText.innerText = "INITIATING BRIEF...";
+    btn.style.opacity = "0.6";
+    btn.style.pointerEvents = "none";
+
+    // 2. Data Preparation
+    const formData = new FormData(form);
+    const csrftoken = form.querySelector('[name=csrfmiddlewaretoken]')?.value;
+
+    // 3. Fetch call
+    fetch('/submit-contact/', { // Ensure this matches your urls.py
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRFToken': csrftoken
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showToast("SUCCESS: Form Submitted Successfully. We will be in touch shortly. Thank you!", "success");
+            form.reset();
+        } else {
+            showToast(`ERROR: ${data.error || 'INVALID DATA'}`, "error");
+        }
+    })
+    .catch(err => {
+        showToast("CONNECTION TIMEOUT - TRY AGAIN", "error");
+    })
+    .finally(() => {
+        setTimeout(() => {
+            if (btnText) btnText.innerText = "SUBMIT";
+            btn.style.opacity = "1";
+            btn.style.pointerEvents = "all";
+        }, 600);
+    });
+});
+
+function showToast(message, type) {
+    const toast = document.getElementById('prd-status-toast');
+    if (!toast) {
+        alert(message); // Fallback if toast element is missing
+        return;
+    }
+    toast.innerText = message;
+    toast.className = `status-toast show ${type}`;
+    setTimeout(() => toast.classList.remove('show'), 4000);
+}
+</script>

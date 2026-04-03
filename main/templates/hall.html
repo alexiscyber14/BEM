@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/hall.css' %}">
+{% endblock %}
+{% block content %}
+<header class="hof-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-container">
+        <img src="{% static './images/vb4.png' %}" alt="Cinematography" class="hero-bg-img">
+    </div>
+    <div class="hero-content">
+        <div class="hero-pre-title">
+            <span class="gold-dot"></span>
+            <span class="tag-text">THE ULTIMATE ARCHIVE</span>
+        </div>
+        <h1 class="hero-title">HALL OF <span class="flicker-gold">FRAMES</span></h1>
+        <p class="hero-description">
+            Explore our curated selection of <strong>Guest Highlights</strong>, 
+            exclusive <strong>Clips</strong>, and full <strong>Episodes</strong>. 
+            A visual legacy captured in 4K.
+        </p>
+        <div class="hero-categories-preview">
+            <span>HIGHLIGHTS</span>
+            <span class="sep">•</span>
+            <span>CLIPS</span>
+            <span class="sep">•</span>
+            <span>EPISODES</span>
+            <span class="sep">•</span>
+            <span>GALLERY</span>
+        </div>
+    </div>
+    <div class="scroll-prompt">
+        <div class="scroll-line"></div>
+        <span>SCROLL TO VIEW</span>
+    </div>
+</header>
+
+
+<div class="hof-wrapper" style="background-color: black;">
+    <!-- LEFT NAV -->
+    <div class="hof-nav-wrapper">
+ <button id="navBackBtn" class="nav-back">← Back</button>
+        <nav class="hof-side-nav" id="hofSideNav">
+            {% for cat in categories %}
+                <button class="nav-btn" data-id="{{ cat.id }}" data-level="category">
+                    {{ cat.name }}
+                </button>
+            {% endfor %}
+        </nav>
+    </div>
+    <!-- RIGHT CONTENT -->
+    <div class="hof-main">
+        <div class="hof-breadcrumb" id="hofBreadcrumb"></div>
+        <div class="hof-content" id="hofContent">
+            <div class="placeholder"></div>
+            {% include 'hall_vids.html' %}
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/hall.js' %}"></script>
+{% endblock content %}

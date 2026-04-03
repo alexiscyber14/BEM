@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+{% endblock %}
+{% block content %}
+<section style="background-color: #000;">
+<section class="intro-cold-open" id="intro">
+    <div class="film-grain"></div>
+    <div class="intro-wrapper">
+        <div class="slate-meta">
+            <div class="meta-tag"> LIVE FEED</div>
+            <div class="meta-tag">UNIT // B.E.M. STUDIO</div>
+        </div>
+        <div class="intro-content">
+            <h1 class="intro-big-title">Explore <br><span class="gold-stroke"> Selected Works.</span></h1>
+            <div class="intro-text-block">
+                <p class="sub-para">
+                    Explore a collection of visual stories we've <span class="highlight"> crafted for  brands, artists, and creators</span>.
+                    From commercials to music videos, every project is built with cinematic precision.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio">
+<div class="portfolio-filter">
+{% for cat in categories %}
+<button 
+    data-filter="{{ cat.id }}" 
+    class="{% if forloop.first %}active{% endif %}">
+    {{ cat.name }}
+</button>
+{% endfor %}
+</div>
+
+<!-- ================== VIDEOS SECTION ================== -->
+<section class="portfolio-section active-port-sec" id="videos-section">
+<section class="services-section" >
+    <div class="hero-overlayh">    
+        <div class="dots">
+        <span class="c-dot active-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        <span class="c-dot"></span>
+        
+    </div>
+<button class="clk click-left" id="nvleft">&#8592;</button>
+<button class="clk click-right" id="nvright">&#8594;</button>
+{% include "portfolio_items.html" %}
+</section>
+</section>
+</section>
+{% include 'form.html' %}
+{% include 'feed.html' %}
+<script src="{% static 'js/portfolio.js' %}"></script>
+{% endblock content %}

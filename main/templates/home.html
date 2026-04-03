@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block content %}
+<section class="hero-cinema">
+    <div class="letterbox top"></div>
+    <div class="letterbox bottom"></div>
+    <div class="hero-viewport">
+        <video autoplay muted loop playsinline class="bg-reel">
+            <source src="{% static './videos/vb1.mp4' %}" type="video/mp4">
+        </video>
+        <div class="vignette"></div>
+    </div>
+    <div class="hero-ui">
+        <div class="ui-top-row animate-in">
+            <div class="brand-monogram">BEM // 2026</div>
+            <div class="system-time" id="digital-clock">00:00:00:00</div>
+        </div>
+        <div class="hero-center">
+            <div class="headline-wrap">
+                <h1 class="main-title animate-in">
+                    Broken Elevator Media <br>
+                    <span class="outline-text">Elevating Stories</span>
+                </h1>
+                <div class="title-footer animate-in">
+                    <span class="line"></span>
+                    <span class="vertical-tag">FILM // MEDIA // CULTURE</span>
+                </div>
+            </div>
+            <p class="hero-description animate-in" style="display: none;">
+                A Los Angeles based production company specializing in film production, 
+                commercial media, podcast production, events, and cultural storytelling.
+            </p>
+
+            <div class="cta-rack animate-in">
+                <a href="{% url 'booking' %}" class="btn-primary">
+                    <span class="btn-fill"></span>
+                    <span class="btn-text">Book Production</span>
+                </a>
+                <a href="{% url 'portfolio' %}" class="btn-outline">View Portfolio</a>
+                <a href="{% url 'hall' %}" class="hall-btn">
+                    <div class="frame-icon">
+                        <span class="f-top"></span><span class="f-bottom"></span>
+                    </div>
+                    WATCH HALL OF FRAMES
+                </a>
+            </div>
+        </div>
+        <div class="ui-bottom-row animate-in">
+            <div class="data-point">
+                <span class="label">LOCATION</span>
+                <span class="val">34.0522° N, 118.2437° W</span>
+            </div>
+            <div class="data-point">
+                <span class="label">BITRATE</span>
+                <span class="val">400 MBPS</span>
+            </div>
+            <div class="data-point">
+                <span class="label">STATUS</span>
+                <span class="val gold-pulse">RECORDING</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission" id="mission">
+    <div class="mission-bg-overlay"></div>
+    <div class="mission-container">
+        <div class="mission-content">
+            <span class="mission-eyebrow">-- This is who we are --</span>
+            <div class="mission-statement">
+                <h2 class="reveal-text">A Los Angeles based <span>production company.</span> </h2>
+                <h2 class="reveal-text-two" >We Specialize in film production, 
+                commercial media, podcast production, events, and cultural storytelling. </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-capabilities">
+    <div class="capabilities-wrapper">
+        <div class="cap-header scroll-reveal">
+            <div class="cap-title-area">
+                <span class="index-code">MN_02 // ECOSYSTEM</span>
+                <h2 class="display-title">Full Service <br><span class="gold-outline">Spectrum</span></h2>
+            </div>
+            <div class="cap-summary">
+                <p>We operate as a multi-disciplinary studio. While our specialized units handle the craft, our ecosystem ensures a seamless transition from concept to final master.</p>
+                <a href="{% url 'services' %}" class="services-link">EXPLORE ALL SERVICES _</a>
+            </div>
+        </div>
+     </div>
+</section>
+
+<section class="home-capabilities">
+    <div class="capabilities-wrapper">
+        <div class="stream-container">
+            <div class="stream-row stream-left">
+                <div class="stream-content">
+                    <span>FILM PRODUCTION</span><span class="divider">/</span>
+                    <span>COMMERCIAL MEDIA</span><span class="divider">/</span>
+                    <span>PODCAST PRODUCTION</span><span class="divider">/</span>
+                    <span>EVENT DOCUMENTATION</span><span class="divider">/</span>
+                    <span>CULTURAL STORYTELLING</span><span class="divider">/</span>
+                    <span>FILM PRODUCTION</span><span class="divider">/</span>
+                    <span>COMMERCIAL MEDIA</span><span class="divider">/</span>
+                    <span>PODCAST PRODUCTION</span><span class="divider">/</span>
+                    <span>EVENT DOCUMENTATION</span><span class="divider">/</span>
+                    <span>CULTURAL STORYTELLING</span><span class="divider">/</span>
+                </div>
+            </div>
+
+            <div class="stream-row stream-right">
+                <div class="stream-content gold-text">
+                    <span>8K RAW CAPTURE</span><span class="divider">/</span>
+                    <span>DAVINCI RESOLVE</span><span class="divider">/</span>
+                    <span>SOUND DESIGN</span><span class="divider">/</span>
+                    <span>VFX INTEGRATION</span><span class="divider">/</span>
+                    <span>STORYBOARDING</span><span class="divider">/</span>
+                    <span>8K RAW CAPTURE</span><span class="divider">/</span>
+                    <span>DAVINCI RESOLVE</span><span class="divider">/</span>
+                    <span>SOUND DESIGN</span><span class="divider">/</span>
+                    <span>VFX INTEGRATION</span><span class="divider">/</span>
+                    <span>STORYBOARDING</span><span class="divider">/</span>
+                </div>
+            </div>
+
+            <div class="stream-row stream-left">
+                <div class="stream-content dim-text">
+                    <span>CINEMA OPTICS</span><span class="divider">/</span>
+                    <span>COLOR GRADING</span><span class="divider">/</span>
+                    <span>MULTI-CAM SWITCHING</span><span class="divider">/</span>
+                    <span>POST-PRODUCTION</span><span class="divider">/</span>
+                    <span>TECHNICAL DIRECTION</span><span class="divider">/</span>
+                    <span>CINEMA OPTICS</span><span class="divider">/</span>
+                    <span>COLOR GRADING</span><span class="divider">/</span>
+                    <span>MULTI-CAM SWITCHING</span><span class="divider">/</span>
+                    <span>POST-PRODUCTION</span><span class="divider">/</span>
+                    <span>TECHNICAL DIRECTION</span><span class="divider">/</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="production-deals">
+    <div class="deals-container">
+        
+        <div class="deals-header scroll-reveal">
+            <h2 class="display-title">Special <span class="gold-text">Offers</span></h2>
+            <p class="deals-subtitle">Select a production bundle and save on your total project cost. High-end quality, better value.</p>
+        </div>
+
+        <div class="deals-grid">
+            {% for rs in offers %}
+            <div class="deal-card {% if forloop.counter == 2 %} highlight-card {% endif %} scroll-reveal">
+                <div class="discount-badge {% if forloop.counter == 2 %} gold-bg {% endif %}">SAVE {{rs.discount_percentage}}</div>
+                <div class="card-content">
+                    <span class="category">{{rs.tag}}</span>
+                    <h3>{{ rs.title|safe }}</h3>
+                    <p>{{ rs.discount_details }}</p>
+                    <ul class="deal-list">
+                        {% for kit in rs.discount_packs.all %}
+                            <li>{{kit.title}}</li>
+                        {% endfor %}
+                    </ul>
+                    <a data-offer="{{rs.title|safe}}" class="deal-btn {% if forloop.counter == 2 %} gold-btn {% endif %} ">{{rs.button_tag}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="deals-footer scroll-reveal">
+            <p>*Discounts apply to documentary and film production bookings over $2,500. Contact us for custom quotes.</p>
+        </div>
+    </div>
+</section>
+{% include 'form.html' %}
+{% include 'feed.html' %}
+<div class="offer-modal" id="offerModal">
+    <div class="modal-overlay" onclick="closeOfferModal()"></div>
+    <div class="modal-content animate-pop">
+        <button class="close-modal" onclick="closeOfferModal()">&times;</button>
+        
+        <div class="modal-header">
+            <span class="gold-badge">Offer Inquiry</span>
+            <h2 id="display-offer-title">PRODUCTION BRIEF</h2>
+            <p>Fill in the details below and we’ll get back to you about this offer.</p>
+        </div>
+
+        <form id="ajax-offer-form">
+            {% csrf_token %}
+            <input type="hidden" name="offer_title" id="hidden-offer-title">
+            
+            <div class="form-grid">
+                <div class="form-field">
+                    <label>FULL NAME</label>
+                    <input type="text" name="name" required placeholder="Alexander Ssenyondo">
+                </div>
+                <div class="form-field">
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" name="email" required placeholder="alex@example.com">
+                </div>
+                <div class="form-field">
+                    <label>PHONE</label>
+                    <input type="text" name="phone" required  placeholder="+1 (555) 123-4567">
+                </div>
+                <div class="form-field">
+                    <label>COMPANY / BRAND</label>
+                    <input type="text" name="company" placeholder="Xerxis Technologies">
+                </div>
+            </div>
+            <br>
+            <div class="form-field full-width">
+                <label>PROJECT DETAILS</label>
+                <textarea name="message" rows="4" placeholder="Briefly describe your vision..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-offer-btn">
+                <span class="btn-text">SUBMIT INQUIRY</span>
+                <div class="loader" id="form-loader" style="display:none;"></div>
+            </button>
+            
+            <div id="form-status" class="status-box"></div>
+        </form>
+    </div>
+</div>
+
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock content %}

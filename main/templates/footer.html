@@ -1,0 +1,231 @@
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2>BROKEN ELEVATOR MEDIA</h2>
+      <p>
+        Building visual stories, media platforms, and cultural experiences 
+        that elevate voices and inspire communities.
+      </p>
+
+      <div class="social-icons">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+
+    <!-- COMPANY -->
+    <div class="footer-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+
+    <!-- RESOURCES -->
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">Media Projects</a></li>
+        <li><a href="#">Creative Studio</a></li>
+        <li><a href="#">Hall of Frames</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+
+    <!-- NEWSLETTER -->
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <p>Get updates about our latest projects.</p>
+
+      <form>
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <span class="contact-email">info@brokenelevatormedia.com</span>
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 Broken Elevator Media. All rights reserved.</p>
+        <p>Developed By: <a href="https://www.xerxistechnologies.com/">Xerxis Technologies</a> | <a href="https://www.instagram.com/alexiscyber14/">@alexiscyber14</a></p>
+  </div>
+
+</footer>
+<style>
+  .site-footer{
+  background:#0B0B0B;
+  color:#F5F5F5;
+  padding:70px 20px 10px;
+  font-family:system-ui;
+  border-top: 5px solid #363636bd;
+  margin-top: 0px;
+}
+
+.footer-container{
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 2fr;
+  gap:50px;
+}
+
+/* BRAND */
+
+.footer-brand h2{
+  font-size:22px !important;
+  margin-bottom:12px;
+  text-align: left !important;
+  letter-spacing:1px;
+}
+
+.footer-brand p{
+  color:#bbb;
+  line-height:1.6;
+  margin-bottom:20px;
+    text-align: left !important;
+}
+
+/* LINKS */
+
+.footer-links h4,
+.footer-newsletter h4{
+  margin-bottom:14px;
+  font-size:16px;
+  color:#fff;
+}
+
+.footer-links ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-links li{
+  margin-bottom:10px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  color:#bbb;
+  transition:all .3s;
+}
+
+.footer-links a:hover{
+  color:#D4AF37;
+  padding-left:4px;
+}
+
+/* SOCIAL */
+
+.social-icons{
+  display:flex;
+  gap:15px;
+}
+
+.social-icons a{
+  color:#bbb;
+  text-decoration:none;
+  font-size:14px;
+  transition:.3s;
+}
+
+.social-icons a:hover{
+  color:#D4AF37;
+}
+
+/* NEWSLETTER */
+
+.footer-newsletter p{
+  color:#bbb;
+  margin-bottom:12px;
+}
+
+.footer-newsletter form{
+  display:flex;
+  margin-bottom:10px;
+}
+
+.footer-newsletter input{
+  flex:1;
+  padding:10px;
+  border:none;
+  outline:none;
+  background:#1a1a1a;
+  color:#fff;
+}
+
+.footer-newsletter button{
+  padding:10px 16px;
+  border:none;
+  background:#D4AF37;
+  color:#000;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.footer-newsletter button:hover{
+  background:#f1c94a;
+}
+
+.contact-email{
+  display:block;
+  margin-top:10px;
+  color:#999;
+  font-size:14px;
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+  display: flex;
+  flex-direction: row;
+  border-top:1px solid #222;
+  margin-top:50px;
+  padding-top:20px;
+  text-align:center;
+  color:#777;
+  font-size:14px;
+}
+.footer-bottom p{
+  margin: 0px auto !important;
+}
+.footer-bottom p a{
+  cursor: pointer;
+  color:#bbb;
+  text-decoration: none;
+  margin: 0px 10px;
+  transition: all 0.3s ease; /* ✨ smooth animation */
+}
+.footer-bottom p a:hover{
+  color: #f1c94a;
+  font-size: 15px;
+}
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .footer-container{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .footer-container{
+    grid-template-columns:1fr;
+  }
+
+}
+</style>

@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock %}
+{% block content %}
+<div class="fixed-background">
+<section class="services-explorer-v2">
+{% for rs in services %}
+  <div class="niche-service-card" id="commercials">
+    <div class="card-media">
+      {% if rs.background_video %}
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="{{rs.videoURL}}" type="video/mp4">
+      </video>
+      {% else %}
+      <img src="{{rs.imageURL}}" class="bg-video">
+      {% endif %}
+      <div class="card-overlay"></div>
+    </div>
+    <div class="card-content">
+      <span class="service-num">{{rs.number}}</span>
+      <div class="text-group">
+        <span class="category-tag">[ {{rs.tag}} ]</span>
+        <h2>{{ rs.title|safe }}</h2>
+           <ul class="features">
+              {% for pack in rs.service_packs.all %}
+                <li>{{pack.title}}</li>
+              {% endfor %}
+            </ul>
+        <div class="cta-line">
+          <span class="price-tag">From {{rs.starting_price}}</span>
+          <a data-offer="{{rs.title|safe}}" class="niche-btn">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+  <div class="niche-service-card" style="display: flex; flex-direction:column; height: auto;">
+<section class="capabilities-section">
+    <div class="capabilities-intro">
+        <div class="intro-line"></div>
+        <span class="section-tag">INVENTORY & SPECS</span>
+        <h2 class="main-heading">ELITE PRODUCTION <span class="gold-text">CAPABILITIES.</span></h2>
+        <p class="intro-description">
+            From Netflix-approved cinema bodies to professional-grade grip and lighting, 
+            our inventory is engineered to handle high-end commercial and cinematic demands.
+        </p>
+    </div>
+
+    <div class="niche-service-card caapabilittiess"   style="height: auto; padding: 20px 0px;">
+        
+        <div class="capability-card">
+            <div class="card-bg-image" style="background-image: url('{% static "images/cam1.jpg" %}');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+                <span class="cap-label">SYSTEMS 01</span>
+                <h3>CAMERA <br>SYSTEMS</h3>
+                <ul class="cap-list">
+                    <li>SONY FX6 Cinema Line</li>
+                    <li>SONY FX3 Cinema Line</li>
+                    <li>SONY A7IV Hybrid</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="capability-card">
+            <div class="card-bg-image" style="background-image: url('{% static "images/lens2.jpg" %}');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+                <span class="cap-label">OPTICS 02</span>
+                <h3>LENSES & <br>GLASS</h3>
+                <ul class="cap-list">
+                    <li>Professional Cinema Primes</li>
+                    <li>G-Master Zoom Series</li>
+                    <li>Anamorphic Glass</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="capability-card">
+            <div class="card-bg-image" style="background-image: url('{% static "images/light1.jpeg" %}');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+                <span class="cap-label">GRIP 03</span>
+                <h3>LIGHTING <br>& RIGS</h3>
+                <ul class="cap-list">
+                    <li>Aputure LED Ecosystem</li>
+                    <li>C-Stands & Diffusion</li>
+                    <li>Gimbal Stabilizers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="capability-card">
+            <div class="card-bg-image" style="background-image: url('{% static "images/mic1.webp" %}');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-inner">
+                <span class="cap-label">AUDIO 04</span>
+                <h3>SOUND <br>CAPTURE</h3>
+                <ul class="cap-list">
+                    <li>Wireless Lav Systems</li>
+                    <li>Boom & Shotgun Mics</li>
+                    <li>Field Recorders</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+  </div>
+</section>
+
+
+
+<div class="offer-modal" id="offerModal">
+    <div class="modal-overlay" onclick="closeOfferModal()"></div>
+    <div class="modal-content animate-pop">
+        <button class="close-modal" onclick="closeOfferModal()">&times;</button>
+        <div class="modal-header">
+            <span class="gold-badge">Service Inquiry</span>
+            <h2 id="display-offer-title">PRODUCTION BRIEF</h2>
+            <p>Fill in the details below and we’ll get back to you shortly.</p>
+        </div>
+        <form id="ajax-offer-form">
+            {% csrf_token %}
+            <input type="hidden" name="offer_title" id="hidden-offer-title">
+            
+            <div class="form-grid">
+                <div class="form-field">
+                    <label>FULL NAME</label>
+                    <input type="text" name="name" required placeholder="Ale... Cart..">
+                </div>
+                <div class="form-field">
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" name="email" required placeholder="...@example.com">
+                </div>
+                <div class="form-field">
+                    <label>PHONE</label>
+                    <input type="text" name="phone" required  placeholder="+1 (555) 123-4567">
+                </div>
+                <div class="form-field">
+                    <label>COMPANY / BRAND..else type individual</label>
+                    <input type="text" name="company" placeholder="Xerxis Technologies">
+                </div>
+                <div class="form-field">
+                    <label>YOUR BUDGET</label>
+                    <input type="text" name="budget" placeholder="$1000..">
+                </div>
+                <div class="form-field">
+                    <label>TIMELINE</label>
+                    <input type="text" name="timeline" placeholder="1 WEEK">
+                </div>
+            </div>
+            <br>
+            <div class="form-field full-width">
+                <label>PROJECT DETAILS</label>
+                <textarea name="message" rows="4" placeholder="Briefly describe your vision..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-offer-btn">
+                <span class="btn-text">SUBMIT INQUIRY</span>
+                <div class="loader" id="form-loader" style="display:none;"></div>
+            </button>        
+            <div id="form-status" class="status-box"></div>
+        </form>
+    </div>
+</div>
+<script src="{% static 'js/services.js' %}"></script>
+{% endblock content %}

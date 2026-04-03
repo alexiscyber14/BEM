@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+{% block content %}
+<section class="intro-cold-open" id="intro">
+    <div class="film-grain"></div>
+    <div class="intro-wrapper">
+        <div class="slate-meta">
+            <div class="meta-tag"> LIVE FEED</div>
+
+            <div class="meta-tag">UNIT // B.E.M. STUDIO</div>
+        </div>
+        <div class="intro-content">
+            <h1 class="intro-big-title">Elevating the <span class="gold-stroke">Story.</span></h1>
+            
+            <div class="intro-text-block">
+                <p class="sub-para">
+                    Broken Elevator Media is a Los Angeles based creative production company
+                    dedicated to <span class="highlight">visual storytelling</span>, entrepreneurship, and cultural media.
+                </p>
+                
+                <p class="sub-para">
+                    Through cinematic productions, documentaries, and digital content,
+                    we create media experiences that elevate voices, brands, and communities.
+                </p>
+            </div>
+            <nav class="intro-nav">
+                <a href="#founders" class="nav-coord">
+                    <span class="coord-num">01</span>
+                    <span class="coord-label">Founders</span>
+                </a>
+                <a href="#mission" class="nav-coord">
+                    <span class="coord-num">02</span>
+                    <span class="coord-label">Mission</span>
+                </a>
+                <a href="#whatwedo" class="nav-coord">
+                    <span class="coord-num">03</span>
+                    <span class="coord-label">What We Do</span>
+                </a>
+                <a href="#messageus" class="nav-coord">
+                    <span class="coord-num">04</span>
+                    <span class="coord-label">Contact</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<section class="founders" id="founders">
+    <div class="founders-container">
+        <div class="founders-header">
+            <span class="eyebrow">The Visionaries</span>
+            <h2 class="founders-title">The Minds Behind the <span class="accent">Lift.</span></h2>
+        </div>
+
+        <div class="founders-grid">
+            <div class="founder-card tall">
+                <div class="founder-image">
+                    <img src="{% static 'images/img5.webp' %}" alt="Executive Producer">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="founder-info">
+                    <span class="role">Executive Producer / Founder</span>
+                    <h3>Julian Ross</h3>
+                    <p>Award-winning storyteller with a decade in the LA indie scene.</p>
+                </div>
+            </div>
+
+            <div class="founder-card">
+                <div class="founder-image">
+                    <img src="{% static 'images/co1.jpg' %}" alt="Creative Director">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="founder-info">
+                    <span class="role">Creative Director</span>
+                    <h3>Elena Vance</h3>
+                    <p>Visual architect specializing in cultural narratives.</p>
+                </div>
+            </div>
+
+            <div class="brand-stat-box">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Productions Delivered</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Global Awards</span>
+                </div>
+                <div class="brand-signature">BE / MEDIA</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission" id="mission">
+    <div class="mission-bg-overlay"></div>
+    <div class="mission-container">
+        <div class="mission-content">
+            <span class="mission-eyebrow">Our Manifest</span> 
+            <div class="mission-statement">
+                <h2 class="reveal-text">We don't just capture <span>moments.</span></h2>
+                <h2 class="reveal-text">We build <span>monuments</span> to culture.</h2>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-item">
+                    <span class="m-num">01</span>
+                    <h4>Elevate Voices</h4>
+                    <p>Moving beyond the surface to find the raw, unfiltered truth in every story.</p>
+                </div>
+                <div class="mission-item">
+                    <span class="m-num">02</span>
+                    <h4>Distort Reality</h4>
+                    <p>Using high-end cinematography to turn the mundane into the extraordinary.</p>
+                </div>
+                <div class="mission-item">
+                    <span class="m-num">03</span>
+                    <h4>Legacy Media</h4>
+                    <p>Producing content that doesn't just trend—it lasts for generations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="whatwedo" id="whatwedo">
+    <div class="wwd-container">
+        <div class="wwd-header">
+            <span class="eyebrow">Services // Capabilities</span>
+            <h2 class="wwd-title">Full-Spectrum <br><span class="outline">Production</span></h2>
+        </div>
+
+        <div class="services-list">
+            <div class="service-item">
+                <div class="service-meta">01 / Visuals</div>
+                <div class="service-name">
+                    <h3>Cinematography</h3>
+                    <span class="service-arrow">→</span>
+                </div>
+                <div class="service-details">
+                    <p>4K/8K Narrative Filmmaking, Commercials, and Music Videos.</p>
+                </div>
+                <div class="service-hover-image" style="background-image: url('{% static 'images/cinema-cam.jpg' %}');"></div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-meta">02 / Narrative</div>
+                <div class="service-name">
+                    <h3>Documentary</h3>
+                    <span class="service-arrow">→</span>
+                </div>
+                <div class="service-details">
+                    <p>Cultural storytelling and brand documentaries that find the human core.</p>
+                </div>
+                <div class="service-hover-image" style="background-image: url('{% static 'images/doc-set.jpg' %}');"></div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-meta">03 / Strategy</div>
+                <div class="service-name">
+                    <h3>Creative Direction</h3>
+                    <span class="service-arrow">→</span>
+                </div>
+                <div class="service-details">
+                    <p>Brand identity, conceptual development, and visual architecture.</p>
+                </div>
+                <div class="service-hover-image" style="background-image: url('{% static 'images/creative-dir.jpg' %}');"></div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-meta">04 / Finish</div>
+                <div class="service-name">
+                    <h3>Post-Production</h3>
+                    <span class="service-arrow">→</span>
+                </div>
+                <div class="service-details">
+                    <p>Precision editing, color grading, and sound design for a cinematic finish.</p>
+                </div>
+                <div class="service-hover-image" style="background-image: url('{% static 'images/editing-suite.jpg' %}');"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'form.html' %}
+</div>
+<script src="{% static 'js/about.js' %}"></script>
+{% endblock content %}
+

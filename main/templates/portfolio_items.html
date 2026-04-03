@@ -1,0 +1,124 @@
+{% load static %}
+<input type="hidden" id="portfolio-data" data-is-photo="{{ is_photo }}">
+{% if is_video %}
+{% for rs in videos %}
+<div class="service-container detailer {% if forloop.first %}active-card{% endif %}" id="wraps">
+  <div class="service-wrapper">
+               <div class="detail-content" >
+          <ul class="features">
+         <button class="close-detail">x</button>
+            <h3>{{rs.title}}</h3>
+            <p class="des">{{ rs.description|linebreaksbr }}</p>
+   <br>
+            <p><span>Season N.</span> {{rs.season}}</p>
+            <p><span>RUNTIME:</span> {{rs.runtime}}</p>
+            <p><span>RELEASE DATE:</span> {{rs.release_date}}</p>
+            <p><span>LANGUAGES:</span> {{rs.language}}</p>
+            <p><span>PLATFORM:</span> {{rs.platform}}</p>
+<br>
+            <p><span>Credits:</span></p>
+            <p>{{ rs.credits_info|linebreaksbr }}</p>
+
+            <br>
+            <p><span>SPEAKERS:</span></p>
+            <p>{{ rs.speakers|linebreaksbr }}</p>
+            <br>
+            <p><span>FILMING LOCATION:</span> {{rs.filming_location}}</p>
+            <p><span>PRODUCTION COMPANY:</span> {{rs.production_company}}</p>
+            <p><span>DIRECTOR:</span> {{rs.director}}</p>
+            <p><span>PRODUCER:</span> {{rs.producer}}</p>  
+            <p><span>CINEMATOGRAPHER:</span> {{rs.cinematographer}}</p>
+            <p><span>EDITOR:</span> {{rs.editor}}</p>
+            <p><span>PLATFORM:</span> {{rs.platform}}</p>
+            <p><span>RIGHTS:</span> All Rights Reserved</p>
+          </ul>
+           </div>
+    <div class="tile-media">
+
+    <iframe
+    class="bg-video"
+    id="video-{{ rs.id }}"
+    src="{{ rs.embed_link }}?enablejsapi=1&rel=0&modestbranding=1"
+    frameborder="0"
+    referrerpolicy='strict-origin-when-cross-origin'
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+        
+    </iframe>
+      <div class="media-overlay"></div>
+    </div>
+    <div class="inner-content">
+      <div class="content-side">
+        <span class="category-tag">{{rs.category.name}} | {{rs.season.name}}</span>
+        <h2>{{rs.title}}</h2>
+        <div class="package-info">
+          <ul class="features">
+            <li>COMPANY: {{rs.production_company}}</li>
+            <li>DIRECTOR: {{rs.director}}</li>
+            <li>PRODUCER: {{rs.producer}}</li>  
+            <li>RELEASE DATE: {{rs.release_date}}</li>
+            <li>PLATFORM: {{rs.platform}}</li>
+          </ul>
+        </div>
+
+        <button class="service-cta">
+            <span class="play-icon"></span>
+        </button>
+
+        <button class="service-cta-two">
+            More Detals
+        </button>
+      </div>
+    </div>
+  </div>  
+</div>
+{% endfor %}
+{% endif %}
+
+{% if is_photo %}
+{% for rs in photos %}
+<div class="service-container gallery detailer {% if forloop.first %}active-card{% endif %}" data-is-photo="{{is_photo}}" >
+  <div class="service-wrapper">
+           <div class="detail-content" >
+          <ul class="features">
+         <button class="close-detail">x</button>
+            <h3>{{rs.title}}</h3>
+            <p class="des">{{ rs.description|linebreaksbr }}</p>
+            <br>
+            <p><span>Season N.</span> {{rs.season}}</p>
+            <p><span>PHOTOGRAPHER:</span> {{rs.photographer}}</p>
+            <p><span>STUDIO/PRODUCTION COMPANY:</span> Broken Elevator Media</p>
+            <p><span>CAPTURED DATE:</span> {{rs.captured_date}}</p>
+            <p><span>CAMERA:</span> {{rs.camera}}</p>
+            <p><span>LENSES:</span> {{rs.lens}}</p>
+            <p><span>COPYRIGHT_OWNER:</span> {{rs.copyright_owner}}</p>
+            <br>
+            <p><span>Usage rights::</span></p>
+            <p>{{ rs.usage_rights|linebreaksbr }}</p>
+          </ul>
+           </div>
+                   <button class="service-cta-two">
+            More Detals
+        </button>
+      <div class="imageBucket">
+      <div class="main-image" >
+        <img src="{{rs.imageURL}}" class="featured-image" alt="{{rs.title}}">
+      </div>
+      <div class="small-images">
+        <img src="{{rs.imageURL}}" class="thumbnail active-thumb" alt="{{rs.title}}">
+        {% for extra in rs.extra_images.all %}
+          <img src="{{ extra.image.url }}" alt="{{extra.title}}" class="thumbnail">
+        {% endfor %}
+      </div>
+  </div>
+  </div>  
+</div>
+{% endfor %}
+{% endif %}
+
+
+
+
+
+
+
