@@ -1,0 +1,2032 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-04-03T14:44:42.079Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "14",
+        "object_repr": "The Helen Keller story doesn't add up",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-04-03T14:58:20.707Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "15",
+        "object_repr": "How Sugar Enslaved The World ..",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-04-03T15:00:05.773Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "13",
+        "object_repr": "KAROL G, Nicki Minaj - Tusa (Official Video)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-04-03T15:01:34.561Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "12",
+        "object_repr": "Mariah the Scientist - Walked In (Official Video) ft. Young Thug",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-04-03T15:02:17.189Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "10",
+        "object_repr": "Andrew Tate x Jack Neel Podcast (2026 Interview)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-04-03T15:02:52.515Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "9",
+        "object_repr": "TRUST NO ONE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-04-03T15:03:58.519Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "8",
+        "object_repr": "FORGOTTEN SOLDIER - Lone Survivor",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-04-03T15:04:33.373Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "7",
+        "object_repr": "Ciarra & Jeffrey's Elegant Wedding Day Video at The Park Savoy NJ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-04-03T15:05:09.891Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "6",
+        "object_repr": "TNW Conference 2022",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-04-03T15:06:33.759Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "5",
+        "object_repr": "Electric Love Festival 2024",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-04-03T15:07:11.884Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "4",
+        "object_repr": "Black Budget - The ENTIRE History of CIA",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-04-03T15:07:49.770Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "3",
+        "object_repr": "THE CONSPIRACY THEORY OF EVERYTHING",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-04-03T15:08:20.496Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "2",
+        "object_repr": "Unleash Potential” – Tech Brand Ad",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-04-03T15:10:23.675Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "1",
+        "object_repr": "Apple “Think Different” Commercial",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-04-03T15:13:04.931Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "The Moons Of Yolanda",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-04-03T15:14:19.461Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Dona Tona Mola",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Dona Tona Mola\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Dona Tona Mola\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Dona Tona Mola\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Dona Tona Mola\", \"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-04-03T15:15:34.011Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Malik dunes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Malik dunes\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Malik dunes\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Malik dunes\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Malik dunes\", \"fields\": [\"Image\"]}}, {\"changed\": {\"name\": \"image content extar image\", \"object\": \"Expense for Malik dunes\", \"fields\": [\"Image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-04-03T15:18:29.333Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Why Storytelling Is the Most Underrated Asset in Modern Media Production",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-04-03T15:26:01.621Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "11",
+        "object_repr": "\"Men Don't Change, But Women Evolve\": The Truth About Love & Success",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-04-03T15:30:01.626Z",
+        "user": 1,
+        "content_type": 21,
+        "object_id": "11",
+        "object_repr": "\"Men Don't Change, But Women Evolve\": The Truth About Love & Success",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add 2. Booking Inquiry",
+        "content_type": 7,
+        "codename": "add_booking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change 2. Booking Inquiry",
+        "content_type": 7,
+        "codename": "change_booking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete 2. Booking Inquiry",
+        "content_type": 7,
+        "codename": "delete_booking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view 2. Booking Inquiry",
+        "content_type": 7,
+        "codename": "view_booking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add 4. Contact Inquiry",
+        "content_type": 8,
+        "codename": "add_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change 4. Contact Inquiry",
+        "content_type": 8,
+        "codename": "change_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete 4. Contact Inquiry",
+        "content_type": 8,
+        "codename": "delete_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view 4. Contact Inquiry",
+        "content_type": 8,
+        "codename": "view_contact"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add 7. Discount Offer",
+        "content_type": 9,
+        "codename": "add_discounts"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change 7. Discount Offer",
+        "content_type": 9,
+        "codename": "change_discounts"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete 7. Discount Offer",
+        "content_type": 9,
+        "codename": "delete_discounts"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view 7. Discount Offer",
+        "content_type": 9,
+        "codename": "view_discounts"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add 6. Service",
+        "content_type": 10,
+        "codename": "add_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change 6. Service",
+        "content_type": 10,
+        "codename": "change_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete 6. Service",
+        "content_type": 10,
+        "codename": "delete_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view 6. Service",
+        "content_type": 10,
+        "codename": "view_services"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add tags",
+        "content_type": 11,
+        "codename": "add_tags"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change tags",
+        "content_type": 11,
+        "codename": "change_tags"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete tags",
+        "content_type": 11,
+        "codename": "delete_tags"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view tags",
+        "content_type": 11,
+        "codename": "view_tags"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add 9.1: Blog Item",
+        "content_type": 12,
+        "codename": "add_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change 9.1: Blog Item",
+        "content_type": 12,
+        "codename": "change_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete 9.1: Blog Item",
+        "content_type": 12,
+        "codename": "delete_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view 9.1: Blog Item",
+        "content_type": 12,
+        "codename": "view_blogpost"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add 9.2: Category",
+        "content_type": 13,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change 9.2: Category",
+        "content_type": 13,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete 9.2: Category",
+        "content_type": 13,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view 9.2: Category",
+        "content_type": 13,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add Discount kit",
+        "content_type": 14,
+        "codename": "add_discountkits"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change Discount kit",
+        "content_type": 14,
+        "codename": "change_discountkits"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete Discount kit",
+        "content_type": 14,
+        "codename": "delete_discountkits"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view Discount kit",
+        "content_type": 14,
+        "codename": "view_discountkits"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add 9. Image item",
+        "content_type": 15,
+        "codename": "add_imagecontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change 9. Image item",
+        "content_type": 15,
+        "codename": "change_imagecontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete 9. Image item",
+        "content_type": 15,
+        "codename": "delete_imagecontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view 9. Image item",
+        "content_type": 15,
+        "codename": "view_imagecontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add image content extar image",
+        "content_type": 16,
+        "codename": "add_imagecontentextarimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change image content extar image",
+        "content_type": 16,
+        "codename": "change_imagecontentextarimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete image content extar image",
+        "content_type": 16,
+        "codename": "delete_imagecontentextarimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view image content extar image",
+        "content_type": 16,
+        "codename": "view_imagecontentextarimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add 3. Offer Inquiry",
+        "content_type": 17,
+        "codename": "add_offerbooking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change 3. Offer Inquiry",
+        "content_type": 17,
+        "codename": "change_offerbooking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete 3. Offer Inquiry",
+        "content_type": 17,
+        "codename": "delete_offerbooking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view 3. Offer Inquiry",
+        "content_type": 17,
+        "codename": "view_offerbooking"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add 9.3: Season Cluster",
+        "content_type": 18,
+        "codename": "add_season"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change 9.3: Season Cluster",
+        "content_type": 18,
+        "codename": "change_season"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete 9.3: Season Cluster",
+        "content_type": 18,
+        "codename": "delete_season"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view 9.3: Season Cluster",
+        "content_type": 18,
+        "codename": "view_season"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add Service Pack",
+        "content_type": 19,
+        "codename": "add_servicepacks"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change Service Pack",
+        "content_type": 19,
+        "codename": "change_servicepacks"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete Service Pack",
+        "content_type": 19,
+        "codename": "delete_servicepacks"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view Service Pack",
+        "content_type": 19,
+        "codename": "view_servicepacks"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add 1. Service Inquiry",
+        "content_type": 20,
+        "codename": "add_serviceinquiry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change 1. Service Inquiry",
+        "content_type": 20,
+        "codename": "change_serviceinquiry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete 1. Service Inquiry",
+        "content_type": 20,
+        "codename": "delete_serviceinquiry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view 1. Service Inquiry",
+        "content_type": 20,
+        "codename": "view_serviceinquiry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Can add 8. Video Item",
+        "content_type": 21,
+        "codename": "add_videocontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Can change 8. Video Item",
+        "content_type": 21,
+        "codename": "change_videocontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Can delete 8. Video Item",
+        "content_type": 21,
+        "codename": "delete_videocontent"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+        "name": "Can view 8. Video Item",
+        "content_type": 21,
+        "codename": "view_videocontent"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$NWrjLZbV0maaRi4GloEInV$nMecsdfF2AfKY4CwYWL4E7RkBAFtgT/TOFrhKZlMUEI=",
+        "last_login": "2026-04-03T14:43:27.540Z",
+        "is_superuser": true,
+        "username": "broken",
+        "first_name": "",
+        "last_name": "",
+        "email": "broken@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-04-03T14:42:24.814Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "main",
+        "model": "booking"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "main",
+        "model": "contact"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "main",
+        "model": "discounts"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "main",
+        "model": "services"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "main",
+        "model": "tags"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "main",
+        "model": "blogpost"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "main",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "main",
+        "model": "discountkits"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "main",
+        "model": "imagecontent"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "main",
+        "model": "imagecontentextarimage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "main",
+        "model": "offerbooking"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "main",
+        "model": "season"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "main",
+        "model": "servicepacks"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "main",
+        "model": "serviceinquiry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+        "app_label": "main",
+        "model": "videocontent"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "h5dio9kc1pgy1y13m8fggs6m7xoldh1x",
+    "fields": {
+        "session_data": ".eJxVjLsOwjAMAP_FM4og73Zk5xsi24lJATVS006If0eVOsB6d7o3JNzWmrZeljRlGOECp19GyM8y7yI_cL43xW1el4nUnqjDdnVrubyuR_s3qNgrjEC6UBkiE7kQvBjDjlEzElvx7KwRG8R4a7W4YSj-nEWYvLE5io7o4PMFEJg41g:1w8fk7:u_9yeigToiOvFZXa_gGu5HGXjbwozHgZdE_OI9BXks8",
+        "expire_date": "2026-04-17T14:43:27.744Z"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 1,
+    "fields": {
+        "parent": null,
+        "name": "Episodes",
+        "ordering": 0,
+        "slug": "episodes",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 10,
+        "tree_id": 3,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 2,
+    "fields": {
+        "parent": 1,
+        "name": "Latest",
+        "ordering": 0,
+        "slug": "latest",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 6,
+        "rght": 7,
+        "tree_id": 3,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 3,
+    "fields": {
+        "parent": 1,
+        "name": "Full Interviews",
+        "ordering": 0,
+        "slug": "featured-episodes",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 3,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 4,
+    "fields": {
+        "parent": 1,
+        "name": "Trending",
+        "ordering": 0,
+        "slug": "trending",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 8,
+        "rght": 9,
+        "tree_id": 3,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 5,
+    "fields": {
+        "parent": 1,
+        "name": "Clips",
+        "ordering": 0,
+        "slug": "clips",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 3,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 6,
+    "fields": {
+        "parent": null,
+        "name": "Guest Highlights",
+        "ordering": 0,
+        "slug": "guest-highlights",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 8,
+        "tree_id": 7,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 7,
+    "fields": {
+        "parent": 6,
+        "name": "Entrepreneurs",
+        "ordering": 0,
+        "slug": "entrepreneurs",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 7,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 8,
+    "fields": {
+        "parent": 6,
+        "name": "Creatives",
+        "ordering": 0,
+        "slug": "creatives",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 7,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 9,
+    "fields": {
+        "parent": 6,
+        "name": "Industry Leaders",
+        "ordering": 0,
+        "slug": "industry-leaders",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 6,
+        "rght": 7,
+        "tree_id": 7,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 10,
+    "fields": {
+        "parent": null,
+        "name": "The Gallery",
+        "ordering": 0,
+        "slug": "the-gallery",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 8,
+        "tree_id": 13,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 11,
+    "fields": {
+        "parent": 10,
+        "name": "Behind The Scenes",
+        "ordering": 0,
+        "slug": "behind-the-scenes",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 13,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 12,
+    "fields": {
+        "parent": 10,
+        "name": "Studio Moments",
+        "ordering": 0,
+        "slug": "studio-moments",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 6,
+        "rght": 7,
+        "tree_id": 13,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 13,
+    "fields": {
+        "parent": 10,
+        "name": "Events Gallery",
+        "ordering": 0,
+        "slug": "events-gallery",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 13,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 14,
+    "fields": {
+        "parent": null,
+        "name": "Press Features",
+        "ordering": 0,
+        "slug": "press-features",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 8,
+        "tree_id": 12,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 15,
+    "fields": {
+        "parent": 14,
+        "name": "Media Coverage",
+        "ordering": 0,
+        "slug": "media-coverage",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 12,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 16,
+    "fields": {
+        "parent": 14,
+        "name": "Awards",
+        "ordering": 0,
+        "slug": "awards",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 12,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 17,
+    "fields": {
+        "parent": 14,
+        "name": "Publications",
+        "ordering": 0,
+        "slug": "publications",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 6,
+        "rght": 7,
+        "tree_id": 12,
+        "level": 1,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 20,
+    "fields": {
+        "parent": null,
+        "name": "Music Videos",
+        "ordering": 0,
+        "slug": "music-videos",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 10,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 21,
+    "fields": {
+        "parent": null,
+        "name": "Documentary",
+        "ordering": 0,
+        "slug": "documentary",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 2,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 22,
+    "fields": {
+        "parent": null,
+        "name": "Films",
+        "ordering": 0,
+        "slug": "films",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 6,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 23,
+    "fields": {
+        "parent": null,
+        "name": "Commercials",
+        "ordering": 0,
+        "slug": "commercials",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 1,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 24,
+    "fields": {
+        "parent": null,
+        "name": "Photography",
+        "ordering": 0,
+        "slug": "photography",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 11,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 25,
+    "fields": {
+        "parent": null,
+        "name": "Events",
+        "ordering": 0,
+        "slug": "events",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 5,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.category",
+    "pk": 26,
+    "fields": {
+        "parent": null,
+        "name": "Interviews",
+        "ordering": 0,
+        "slug": "interviews",
+        "created_at": "2026-03-27T11:10:26.388Z",
+        "updated_at": "2026-03-27T11:10:26.425Z",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 9,
+        "level": 0,
+        "tag": []
+    }
+},
+{
+    "model": "main.season",
+    "pk": 1,
+    "fields": {
+        "name": "Commercials SN1",
+        "description": "Welcome to Commercials SN1 — a showcase of our most captivating brand stories brought to life with cinematic precision and creative vision.\"",
+        "slug": "commercials-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-13T14:14:16.619Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 2,
+    "fields": {
+        "name": "Documentaries SN1",
+        "description": "Highlights of our documentaryy works",
+        "slug": "documentaries-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-13T21:38:33.744Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 3,
+    "fields": {
+        "name": "Events SN1",
+        "description": "Our events productions",
+        "slug": "events-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-14T08:41:14.827Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 4,
+    "fields": {
+        "name": "Films SN1",
+        "description": "Our movie production catalog",
+        "slug": "films-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-14T09:14:36.921Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 5,
+    "fields": {
+        "name": "Inetrviews SN1",
+        "description": "Our Interview Catalog and more",
+        "slug": "inetrviews-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-14T09:42:58.105Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 6,
+    "fields": {
+        "name": "Music Videos SN1",
+        "description": "Explore our first season of music video production",
+        "slug": "music-videos-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-14T09:56:42.123Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 7,
+    "fields": {
+        "name": "Photography SN1",
+        "description": "Our photography catalog",
+        "slug": "photography-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-14T10:29:07.610Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 8,
+    "fields": {
+        "name": "Mona Gates SN1",
+        "description": "",
+        "slug": "mona-gates-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-23T19:43:20.005Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.season",
+    "pk": 9,
+    "fields": {
+        "name": "Clips SN1",
+        "description": "",
+        "slug": "clips-sn1",
+        "ordering": 0,
+        "created_at": "2026-03-24T18:50:18.825Z",
+        "updated_at": "2026-03-27T11:10:26.623Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 1,
+    "fields": {
+        "category": 23,
+        "season": 1,
+        "title": "Apple “Think Different” Commercial",
+        "embed_link": "https://www.youtube.com/embed/j4yA8X2ivbM",
+        "description": "Directed and produced for Apple, this 'Think Different' spot combines bold visuals and narrative precision to highlight innovation and creativity.",
+        "credits_info": "Director: Alexander Ssenyondo\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]Director: Alexander Ssenyondo\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/Apple-26-Feature.jpg",
+        "slug": "apple-think-different-commercial",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "00:01:34",
+        "release_date": "2026-03-13",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": true,
+        "is_event_video": false,
+        "platform": "TV / Broadcast",
+        "external_link": "https://www.youtube.com/embed/5sMBhDv4sikv",
+        "festival_selection": false,
+        "awards": "",
+        "is_event_recap": false,
+        "is_event_video_highlight": false,
+        "ordering": 0,
+        "created_at": "2026-03-13T14:25:03.769Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 2,
+    "fields": {
+        "category": 23,
+        "season": 1,
+        "title": "Unleash Potential” – Tech Brand Ad",
+        "embed_link": "https://www.youtube.com/embed/1lCOgFPtaZ4",
+        "description": "A high-end commercial for YEGA, bringing their latest campaign '[Campaign Name]' to life through cinematic storytelling and precision production.",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/cm2.jpg",
+        "slug": "unleash-potential-tech-brand-ad",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-13",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": false,
+        "is_event_video": false,
+        "platform": "TV / Broadcast",
+        "external_link": "https://www.youtube.com/embed/5sMBhDv4sikv",
+        "festival_selection": false,
+        "awards": "",
+        "is_event_recap": true,
+        "is_event_video_highlight": true,
+        "ordering": 0,
+        "created_at": "2026-03-13T15:01:40.049Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 3,
+    "fields": {
+        "category": 21,
+        "season": 2,
+        "title": "THE CONSPIRACY THEORY OF EVERYTHING",
+        "embed_link": "https://www.youtube.com/embed/oOReBkMrTew",
+        "description": "What if everything you thought you knew about reality was a carefully crafted illusion? The Conspiracy Theory of Everything dives deep into the hidden forces shaping our world, uncovering distorted narratives, suppressed knowledge, and the battle for human consciousness.",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "Caryvill Weeden\r\nStephie Elsie\r\nMora Donna",
+        "thumbnail": "images/thumbnails/cm4.jpg",
+        "slug": "the-conspiracy-theory-of-everything",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-14",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": false,
+        "is_event_video": false,
+        "platform": "Youtube, Website",
+        "external_link": "https://www.youtube.com/watch?v=oOReBkMrTew",
+        "festival_selection": false,
+        "awards": "",
+        "is_event_recap": false,
+        "is_event_video_highlight": false,
+        "ordering": 0,
+        "created_at": "2026-03-14T08:26:43.146Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 4,
+    "fields": {
+        "category": 21,
+        "season": 2,
+        "title": "Black Budget - The ENTIRE History of CIA",
+        "embed_link": "https://www.youtube.com/embed/UnvtdsiTgD8",
+        "description": "This is a must-watch documentary about the CIA’s dark legacy—funded by secret budgets, driven by covert missions, and hidden from public view. From its shadowy origins to global influence, uncover the full story of how this agency shaped world events through espionage, deception, and unchecked power. The truth has been buried—until now.",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/cc2.jpg",
+        "slug": "black-budget-the-entire-history-of-cia",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-14",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": true,
+        "is_event_video": false,
+        "platform": "Youtube, Website",
+        "external_link": "https://www.youtube.com/watch?v=UnvtdsiTgD8",
+        "festival_selection": false,
+        "awards": "",
+        "is_event_recap": true,
+        "is_event_video_highlight": true,
+        "ordering": 0,
+        "created_at": "2026-03-14T08:37:19.559Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 5,
+    "fields": {
+        "category": 25,
+        "season": 3,
+        "title": "Electric Love Festival 2024",
+        "embed_link": "https://www.youtube.com/embed/mzmC3WkMy7s",
+        "description": "Relive the Electric Love Festival 2024 Opening Ceremony and get taken back to this emotional 16-minute show. With over 100 individuals involved, the ELF Opening Ceremony is a standout highlight each year.",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/ning.jpg",
+        "slug": "electric-love-festival-2024",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-14",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": true,
+        "is_event_video": false,
+        "platform": "Youtube, Website",
+        "external_link": "https://www.youtube.com/watch?v=r3BvNyw0BJk&list=RDr3BvNyw0BJk&start_radio=1",
+        "festival_selection": true,
+        "awards": "",
+        "is_event_recap": false,
+        "is_event_video_highlight": false,
+        "ordering": 0,
+        "created_at": "2026-03-14T08:43:18.610Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 6,
+    "fields": {
+        "category": 25,
+        "season": 3,
+        "title": "TNW Conference 2022",
+        "embed_link": "https://www.youtube.com/embed/N8tnM9KyLos",
+        "description": "The biggest names in tech, the hottest startups, and the boldest ideas all come together at TNW Conference 2025—Europe’s most electrifying tech festival. \r\n\r\nAre you ready to connect, innovate, and scale your business in a space designed for the people who will shape our future?",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]v",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/cvs3.jpg",
+        "slug": "tnw-conference-2022",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-14",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": true,
+        "is_event_video": false,
+        "platform": "Youtube, Website",
+        "external_link": "https://www.youtube.com/watch?v=N8tnM9KyLos",
+        "festival_selection": true,
+        "awards": "",
+        "is_event_recap": false,
+        "is_event_video_highlight": false,
+        "ordering": 0,
+        "created_at": "2026-03-14T08:48:20.306Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 7,
+    "fields": {
+        "category": 25,
+        "season": 3,
+        "title": "Ciarra & Jeffrey's Elegant Wedding Day Video at The Park Savoy NJ",
+        "embed_link": "https://www.youtube.com/embed/rfCPQy6MetU",
+        "description": "Experience the elegance and romance of Ciarra & Jeffrey's special day as we present their stunning wedding day video, filmed at the timeless Park Savoy in New Jersey. HAK Weddings had the honor of capturing every cherished moment, from the intimate exchange of vows to the lively celebrations that filled the day with joy and love.",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/xc2.jpg",
+        "slug": "ciarra-jeffreys-elegant-wedding-day-video-at-the-park-savoy-nj",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-14",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": false,
+        "is_highlight": true,
+        "is_event_video": false,
+        "platform": "Youtube, Website",
+        "external_link": "https://www.youtube.com/watch?v=4wT1x5Eh-Bg",
+        "festival_selection": true,
+        "awards": "",
+        "is_event_recap": true,
+        "is_event_video_highlight": true,
+        "ordering": 0,
+        "created_at": "2026-03-14T08:52:42.154Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 8,
+    "fields": {
+        "category": 22,
+        "season": 4,
+        "title": "FORGOTTEN SOLDIER - Lone Survivor",
+        "embed_link": "https://www.youtube.com/embed/j1J47l_yW-Q",
+        "description": "When a devastating ambush decimates his unit, Corporal Elias Vance wakes up alone, injured, and deep behind enemy lines. With minimal supplies, an infection setting in, and hunted by relentless patrols and surveillance drones, Vance must battle a hostile wilderness and his own trauma to survive. This isn't just an action movie; it's an intense, psychological survival thriller that explores the limits of human endurance.",
+        "credits_info": "Director: Caryil W\r\nProducer: [Producer Name]\r\nDirector of Photography (DP): [Cinematographer Name]\r\nEditor: [Editor Name]\r\nProduction Company: [Your Production Company Name]\r\nClient: Apple\r\nAgency (if applicable): [Agency Name]\r\nMusic / Sound Design: [Composer / Sound Designer Name]",
+        "speakers": "",
+        "thumbnail": "images/thumbnails/mv1.jpg",
+        "slug": "forgotten-soldier-lone-survivor",
+        "director": "Caryvill Weeden",
+        "producer": "Caryvill Weeden Jr",
+        "production_company": "Broken Elevator Media",
+        "cinematographer": "Caryvill Weeden Sr",
+        "editor": "Stephie Elsie",
+        "runtime": "02:01:34",
+        "release_date": "2026-03-14",
+        "filming_location": "Callifornia",
+        "language": "English, Spanish",
+        "is_featured": true,
+        "is_premiere": true,
+        "is_highlight": true,
+        "is_event_video": false,
+        "platform": "Youtube, Website",
+        "external_link": "https://www.youtube.com/watch?v=j1J47l_yW-Q",
+        "festival_selection": false,
+        "awards": "",
+        "is_event_recap": false,
+        "is_event_video_highlight": false,
+        "ordering": 0,
+        "created_at": "2026-03-14T09:19:19.320Z",
+        "updated_at": "2026-03-27T11:10:26.710Z"
+    }
+},
+{
+    "model": "main.videocontent",
+    "pk": 9,
+    "fields": {
+        "category": 22,
+        "season": 4,
+        "title": "TRUST NO ONE",
+        "embed_link": "https://www.youtube.com/embed/thoGWMmw7Fk",
+        "description": 

@@ -30,6 +30,13 @@ class ImageContentAdmin(admin.ModelAdmin):
 # Inline for BlogComment in BlogPost admin
 
 
+
+
+
+
+
+
+
 #####SERVICES
 class ServicePacksInline(admin.TabularInline):
     model = ServicePacks

@@ -8,43 +8,44 @@
     <div class="letterbox top"></div>
     <div class="letterbox bottom"></div>
     <div class="hero-viewport">
-        <video autoplay muted loop playsinline class="bg-reel">
-            <source src="{% static './videos/vb1.mp4' %}" type="video/mp4">
+        <video autoplay muted loop playsinline class="bg-reel" style="   filter: grayscale(100%) contrast(1.2) brightness(0.8);">
+            <source src="{% static './videos/htd.mp4' %}" type="video/mp4">
         </video>
         <div class="vignette"></div>
     </div>
     <div class="hero-ui">
         <div class="ui-top-row animate-in">
-            <div class="brand-monogram">BEM // 2026</div>
+            <div class="brand-monogram">XTG // 2026</div>
             <div class="system-time" id="digital-clock">00:00:00:00</div>
         </div>
         <div class="hero-center">
             <div class="headline-wrap">
                 <h1 class="main-title animate-in">
-                    Broken Elevator Media <br>
-                    <span class="outline-text">Elevating Stories</span>
+                    XERXIS Technologies<br>
+                    <span class="outline-text">Build Better</span>
                 </h1>
                 <div class="title-footer animate-in">
                     <span class="line"></span>
-                    <span class="vertical-tag">FILM // MEDIA // CULTURE</span>
+                    <span class="vertical-tag">SYSTEMS // DATA // AI</span>
                 </div>
             </div>
             <p class="hero-description animate-in" style="display: none;">
-                A Los Angeles based production company specializing in film production, 
-                commercial media, podcast production, events, and cultural storytelling.
+                A software and IT consulting company delivering custom software solutions, 
+                cloud technologies, cybersecurity services, and digital innovation for businesses 
+                worldwide.
             </p>
 
             <div class="cta-rack animate-in">
                 <a href="{% url 'booking' %}" class="btn-primary">
                     <span class="btn-fill"></span>
-                    <span class="btn-text">Book Production</span>
+                    <span class="btn-text">Book a Consultation</span>
                 </a>
                 <a href="{% url 'portfolio' %}" class="btn-outline">View Portfolio</a>
                 <a href="{% url 'hall' %}" class="hall-btn">
                     <div class="frame-icon">
                         <span class="f-top"></span><span class="f-bottom"></span>
                     </div>
-                    WATCH HALL OF FRAMES
+                    EXPLORE LIVE OFFERS
                 </a>
             </div>
         </div>
@@ -71,9 +72,13 @@
         <div class="mission-content">
             <span class="mission-eyebrow">-- This is who we are --</span>
             <div class="mission-statement">
-                <h2 class="reveal-text">A Los Angeles based <span>production company.</span> </h2>
-                <h2 class="reveal-text-two" >We Specialize in film production, 
-                commercial media, podcast production, events, and cultural storytelling. </h2>
+                <h2 class="reveal-text">
+                    A software & IT <span>consulting company.</span> 
+                </h2>
+                <h2 class="reveal-text-two" >    
+                    We deliver custom software, AI integration, cloud solutions,
+                    cybersecurity, and IT consulting that empower businesses to scale. 
+                </h2>
             </div>
         </div>
     </div>
@@ -87,7 +92,11 @@
                 <h2 class="display-title">Full Service <br><span class="gold-outline">Spectrum</span></h2>
             </div>
             <div class="cap-summary">
-                <p>We operate as a multi-disciplinary studio. While our specialized units handle the craft, our ecosystem ensures a seamless transition from concept to final master.</p>
+                <p>
+                    We operate as a multidisciplinary technology company. While our specialized teams 
+                    handle software, AI, cloud, and cybersecurity, our ecosystem ensures a seamless 
+                    transition from concept to final deployment.               
+                </p>
                 <a href="{% url 'services' %}" class="services-link">EXPLORE ALL SERVICES _</a>
             </div>
         </div>
@@ -97,50 +106,50 @@
 <section class="home-capabilities">
     <div class="capabilities-wrapper">
         <div class="stream-container">
-            <div class="stream-row stream-left">
-                <div class="stream-content">
-                    <span>FILM PRODUCTION</span><span class="divider">/</span>
-                    <span>COMMERCIAL MEDIA</span><span class="divider">/</span>
-                    <span>PODCAST PRODUCTION</span><span class="divider">/</span>
-                    <span>EVENT DOCUMENTATION</span><span class="divider">/</span>
-                    <span>CULTURAL STORYTELLING</span><span class="divider">/</span>
-                    <span>FILM PRODUCTION</span><span class="divider">/</span>
-                    <span>COMMERCIAL MEDIA</span><span class="divider">/</span>
-                    <span>PODCAST PRODUCTION</span><span class="divider">/</span>
-                    <span>EVENT DOCUMENTATION</span><span class="divider">/</span>
-                    <span>CULTURAL STORYTELLING</span><span class="divider">/</span>
-                </div>
-            </div>
+<div class="stream-row stream-left">
+    <div class="stream-content">
+        <span>SOFTWARE ENGINEERING</span><span class="divider">/</span>
+        <span>WEB & MOBILE APPS</span><span class="divider">/</span>
+        <span>CLOUD SOLUTIONS</span><span class="divider">/</span>
+        <span>API DEVELOPMENT</span><span class="divider">/</span>
+        <span>DIGITAL PRODUCTS</span><span class="divider">/</span>
+        <span>SOFTWARE ENGINEERING</span><span class="divider">/</span>
+        <span>WEB & MOBILE APPS</span><span class="divider">/</span>
+        <span>CLOUD SOLUTIONS</span><span class="divider">/</span>
+        <span>API DEVELOPMENT</span><span class="divider">/</span>
+        <span>DIGITAL PRODUCTS</span><span class="divider">/</span>
+    </div>
+</div>
 
-            <div class="stream-row stream-right">
-                <div class="stream-content gold-text">
-                    <span>8K RAW CAPTURE</span><span class="divider">/</span>
-                    <span>DAVINCI RESOLVE</span><span class="divider">/</span>
-                    <span>SOUND DESIGN</span><span class="divider">/</span>
-                    <span>VFX INTEGRATION</span><span class="divider">/</span>
-                    <span>STORYBOARDING</span><span class="divider">/</span>
-                    <span>8K RAW CAPTURE</span><span class="divider">/</span>
-                    <span>DAVINCI RESOLVE</span><span class="divider">/</span>
-                    <span>SOUND DESIGN</span><span class="divider">/</span>
-                    <span>VFX INTEGRATION</span><span class="divider">/</span>
-                    <span>STORYBOARDING</span><span class="divider">/</span>
-                </div>
-            </div>
+<div class="stream-row stream-right">
+    <div class="stream-content gold-text">
+        <span>ARTIFICIAL INTELLIGENCE</span><span class="divider">/</span>
+        <span>MACHINE LEARNING</span><span class="divider">/</span>
+        <span>DATA ENGINEERING</span><span class="divider">/</span>
+        <span>CYBERSECURITY</span><span class="divider">/</span>
+        <span>SYSTEM ARCHITECTURE</span><span class="divider">/</span>
+        <span>ARTIFICIAL INTELLIGENCE</span><span class="divider">/</span>
+        <span>MACHINE LEARNING</span><span class="divider">/</span>
+        <span>DATA ENGINEERING</span><span class="divider">/</span>
+        <span>CYBERSECURITY</span><span class="divider">/</span>
+        <span>SYSTEM ARCHITECTURE</span><span class="divider">/</span>
+    </div>
+</div>
 
-            <div class="stream-row stream-left">
-                <div class="stream-content dim-text">
-                    <span>CINEMA OPTICS</span><span class="divider">/</span>
-                    <span>COLOR GRADING</span><span class="divider">/</span>
-                    <span>MULTI-CAM SWITCHING</span><span class="divider">/</span>
-                    <span>POST-PRODUCTION</span><span class="divider">/</span>
-                    <span>TECHNICAL DIRECTION</span><span class="divider">/</span>
-                    <span>CINEMA OPTICS</span><span class="divider">/</span>
-                    <span>COLOR GRADING</span><span class="divider">/</span>
-                    <span>MULTI-CAM SWITCHING</span><span class="divider">/</span>
-                    <span>POST-PRODUCTION</span><span class="divider">/</span>
-                    <span>TECHNICAL DIRECTION</span><span class="divider">/</span>
-                </div>
-            </div>
+<div class="stream-row stream-left">
+    <div class="stream-content dim-text">
+        <span>UI/UX DESIGN</span><span class="divider">/</span>
+        <span>DEVOPS AUTOMATION</span><span class="divider">/</span>
+        <span>SCALABLE INFRASTRUCTURE</span><span class="divider">/</span>
+        <span>SOFTWARE INTEGRATION</span><span class="divider">/</span>
+        <span>TECHNICAL CONSULTING</span><span class="divider">/</span>
+        <span>UI/UX DESIGN</span><span class="divider">/</span>
+        <span>DEVOPS AUTOMATION</span><span class="divider">/</span>
+        <span>SCALABLE INFRASTRUCTURE</span><span class="divider">/</span>
+        <span>SOFTWARE INTEGRATION</span><span class="divider">/</span>
+        <span>TECHNICAL CONSULTING</span><span class="divider">/</span>
+    </div>
+</div>
         </div>
     </div>
 </section>
@@ -149,8 +158,10 @@
     <div class="deals-container">
         
         <div class="deals-header scroll-reveal">
-            <h2 class="display-title">Special <span class="gold-text">Offers</span></h2>
-            <p class="deals-subtitle">Select a production bundle and save on your total project cost. High-end quality, better value.</p>
+            <h2 class="display-title">Exclusive <span class="gold-text">Packages</span></h2>
+            <p class="deals-subtitle">
+            Choose a tailored tech bundle and reduce your overall project cost. Premium engineering, smarter value, scalable results.
+            </p>        
         </div>
 
         <div class="deals-grid">

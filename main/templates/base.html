@@ -17,7 +17,7 @@
 <body>
   <header class="header" id="header">
     <div class="container">
-      <div class="logo"><a href="/">B:E <span>MEDIA</span></a></div>
+      <div class="logo"><a href="/">XERXIS: <span>TECH</span></a></div>
       <nav class="nav">
         <ul class="nav-links">
 <li class="{% if request.resolver_match.url_name == 'home' %}activev{% endif %}">
@@ -37,7 +37,7 @@
 </li>
 
 <li class="{% if request.resolver_match.url_name == 'hall' %}activev{% endif %}">
-    <a href="{% url 'hall' %}">Hall of Frames</a>
+    <a href="{% url 'hall' %}">Saas Products</a>
 </li>
 
 <li class="{% if request.resolver_match.url_name == 'events' %}activev{% endif %}">
@@ -52,7 +52,7 @@
     <a href="{% url 'contact' %}">Contact</a>
 </li>
         </ul>
-        <a href="{% url 'booking' %}" class="cta-button">Book Production</a>
+        <a href="{% url 'booking' %}" class="cta-button">Book a Consultation</a>
       </nav>
       <div class="hamburger">
         <span></span>
