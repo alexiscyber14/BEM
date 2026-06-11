@@ -1,64 +1,562 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
-{% endblock %}
+
+
 {% block content %}
-<section style="background-color: #000;">
-<section class="intro-cold-open" id="intro">
-    <div class="film-grain"></div>
-    <div class="intro-wrapper">
-        <div class="slate-meta">
-            <div class="meta-tag"> LIVE FEED</div>
-            <div class="meta-tag">UNIT // B.E.M. STUDIO</div>
+<section class="packages-page-wrapper">
+    
+    <header class="packages-hero">
+        <div class="film-grain"></div>
+        <div class="packages-hero-container">
+            <span class="packages-subtitle">PREconfigured ENTERPRISE STACKS</span>
+            <h1 class="packages-main-title">Technology Solution <span class="gold-accent">Packages.</span></h1>
+            <p class="packages-lead-text">
+                Turnkey, enterprise-grade hardware infrastructures engineered for immediate deployment. Optimized by core operations architects to guarantee absolute operational synergy, scalability, and resilience.
+            </p>
         </div>
-        <div class="intro-content">
-            <h1 class="intro-big-title">Explore <br><span class="gold-stroke"> Selected Works.</span></h1>
-            <div class="intro-text-block">
-                <p class="sub-para">
-                    Explore a collection of visual stories we've <span class="highlight"> crafted for  brands, artists, and creators</span>.
-                    From commercials to music videos, every project is built with cinematic precision.
-                </p>
-            </div>
+    </header>
+
+    <main class="packages-catalog-stack">
+        <div class="stack-inner-container">
+
+            <section class="package-deployment-row">
+                <div class="package-grid-blueprint">
+                    
+                    <div class="package-meta-column">
+                        <div class="package-badge">PKG-01 // DEEP LEARNING</div>
+                        <h2 class="package-title">AI Research & Innovation Lab</h2>
+                        <p class="package-scope-summary">
+                            Designed for universities, AI startups, and research institutions looking to deploy dedicated localized model training and inference pipelines.
+                        </p>
+                        <div class="ideal-for-box">
+                            <span class="box-label">Target Deployments:</span>
+                            <p>Machine learning, deep learning, computer vision, and large-scale AI model development workflows.</p>
+                        </div>
+                    </div>
+
+                    <div class="package-inventory-column">
+                        <h3 class="inventory-header">Included Hardware & Services</h3>
+                        <div class="inventory-subgrid">
+                            <ul class="inventory-list">
+                                <li><strong>4x</strong> AI Workstations</li>
+                                <li><strong>2x</strong> High-Performance GPU Servers</li>
+                                <li><strong>1x</strong> 100 TB NAS Storage System</li>
+                                <li>Enterprise 10/25 Gbps Transit Networking</li>
+                                <li>Industrial Server Rack & Smart UPS System</li>
+                            </ul>
+                            <ul class="inventory-list">
+                                <li>On-Site Installation & Physical Configuration</li>
+                                <li>AI Development Environment Setup</li>
+                                <li>Engineering Staff Training & Onboarding</li>
+                                <li>12 Months Priority Technical Support SLA</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="package-action-column">
+                        <div class="action-box-lock">
+                            <span class="action-caption">Procurement & Implementation</span>
+                            <a href="#request-rfq" class="package-rfq-btn">Request Package Quote</a>
+                            <span class="timeline-indicator">Deployment Timeframe: 3-4 Weeks</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="package-deployment-row">
+                <div class="package-grid-blueprint">
+                    
+                    <div class="package-meta-column">
+                        <div class="package-badge">PKG-02 // HYPER-SCALE</div>
+                        <h2 class="package-title">Enterprise Data Center Package</h2>
+                        <p class="package-scope-summary">
+                            A complete, turn-key core infrastructure solution for organizations building out new facilities or executing comprehensive hardware lifecycle upgrades.
+                        </p>
+                        <div class="ideal-for-box">
+                            <span class="box-label">Target Deployments:</span>
+                            <p>Tier-3 and Tier-4 environments for banks, telecom operators, government agencies, and global enterprises.</p>
+                        </div>
+                    </div>
+
+                    <div class="package-inventory-column">
+                        <h3 class="inventory-header">Included Hardware & Services</h3>
+                        <div class="inventory-subgrid">
+                            <ul class="inventory-list">
+                                <li>High-Density Enterprise Rack Servers</li>
+                                <li>Fault-Tolerant Enterprise Storage Arrays</li>
+                                <li>High-Throughput Core & Access Switches</li>
+                                <li>Next-Gen Hardware Firewall Appliances</li>
+                            </ul>
+                            <ul class="inventory-list">
+                                <li>Server Racks & High-Density Cable Management</li>
+                                <li>UPS Systems & Smart Power Distribution Units (PDUs)</li>
+                                <li>In-Row Precision Cooling & Thermal Dissipation</li>
+                                <li>Commissioning, Full Documentation & 1-Year SLA Support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="package-action-column">
+                        <div class="action-box-lock">
+                            <span class="action-caption">Procurement & Implementation</span>
+                            <a href="#request-rfq" class="package-rfq-btn">Request Package Quote</a>
+                            <span class="timeline-indicator">Deployment Timeframe: 6-8 Weeks</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="package-deployment-row">
+                <div class="package-grid-blueprint">
+                    
+                    <div class="package-meta-column">
+                        <div class="package-badge">PKG-03 // TRANSIT LAYER</div>
+                        <h2 class="package-title">Corporate Network Infrastructure</h2>
+                        <p class="package-scope-summary">
+                            A secure, zero-bottleneck, high-performance networking solution designed for rapidly growing businesses requiring bulletproof uptime.
+                        </p>
+                        <div class="ideal-for-box">
+                            <span class="box-label">Target Deployments:</span>
+                            <p>Corporate headquarters, luxury hospitality networks, multi-wing hospitals, and comprehensive educational institutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="package-inventory-column">
+                        <h3 class="inventory-header">Included Hardware & Services</h3>
+                        <div class="inventory-subgrid">
+                            <ul class="inventory-list">
+                                <li>Enterprise Backbone Routers</li>
+                                <li>L2/L3 Managed Distribution Switches</li>
+                                <li>High-Availability Hardware Firewall Appliance</li>
+                                <li>Fiber Optic Core Backbone Routing Equipment</li>
+                            </ul>
+                            <ul class="inventory-list">
+                                <li>High-Density Wireless Access Points (Wi-Fi 6E/7)</li>
+                                <li>Category 6A Structured Cabling Infrastructure</li>
+                                <li>Network Closets, Racks & Active Accessories</li>
+                                <li>Security Hardening, Optimization & Network Admin Training</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="package-action-column">
+                        <div class="action-box-lock">
+                            <span class="action-caption">Procurement & Implementation</span>
+                            <a href="#request-rfq" class="package-rfq-btn">Request Package Quote</a>
+                            <span class="timeline-indicator">Deployment Timeframe: 2-3 Weeks</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="package-deployment-row">
+                <div class="package-grid-blueprint">
+                    
+                    <div class="package-meta-column">
+                        <div class="package-badge">PKG-04 // RESILIENCE LAYER</div>
+                        <h2 class="package-title">Business Continuity & Disaster Recovery</h2>
+                        <p class="package-scope-summary">
+                            Protect critical enterprise asset data and minimize system disruption records with automated, redundant hardware hot-swaps.
+                        </p>
+                        <div class="ideal-for-box">
+                            <span class="box-label">Target Deployments:</span>
+                            <p>Financial institutions, critical healthcare providers, legal firms, and enterprises managing high-liability user records.</p>
+                        </div>
+                    </div>
+
+                    <div class="package-inventory-column">
+                        <h3 class="inventory-header">Included Hardware & Services</h3>
+                        <div class="inventory-subgrid">
+                            <ul class="inventory-list">
+                                <li>High-IOPS Enterprise NAS or SAN Arrays</li>
+                                <li>Dedicated Offline Backup Storage Appliances</li>
+                                <li>High-Capacity Standby Secondary Compute Servers</li>
+                                <li>Extended Battery Backup Systems & Intelligent UPS</li>
+                            </ul>
+                            <ul class="inventory-list">
+                                <li>Secondary Location Disaster Recovery Hardware</li>
+                                <li>Automated Real-Time Synchronous Backup Config</li>
+                                <li>Scheduled Penetration & Fault Data Recovery Testing</li>
+                                <li>Operational Staff Onboarding & Monitored SLA Support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="package-action-column">
+                        <div class="action-box-lock">
+                            <span class="action-caption">Procurement & Implementation</span>
+                            <a href="#request-rfq" class="package-rfq-btn">Request Package Quote</a>
+                            <span class="timeline-indicator">Deployment Timeframe: 3-4 Weeks</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="package-deployment-row">
+                <div class="package-grid-blueprint">
+                    
+                    <div class="package-meta-column">
+                        <div class="package-badge">PKG-05 // WORKSPACE WORKFLOW</div>
+                        <h2 class="package-title">Smart Enterprise Office Package</h2>
+                        <p class="package-scope-summary">
+                            A completely integrated, modern workspace framework bringing security, local computation, and unified coordination to professional environments.
+                        </p>
+                        <div class="ideal-for-box">
+                            <span class="box-label">Target Deployments:</span>
+                            <p>Medium-sized corporate headquarters, executive consulting operations, and financial service firms looking for elite workspace standard upgrades.</p>
+                        </div>
+                    </div>
+
+                    <div class="package-inventory-column">
+                        <h3 class="inventory-header">Included Hardware & Services</h3>
+                        <div class="inventory-subgrid">
+                            <ul class="inventory-list">
+                                <li>High-Performance Corporate Workstations</li>
+                                <li>Centralized Dynamic Local File Servers</li>
+                                <li>Secure Managed Office Switches & Core Routers</li>
+                                <li>Unified Hardware Threat Management Firewalls</li>
+                                <li>Central Network-Attached Storage (NAS) Pools</li>
+                            </ul>
+                            <ul class="inventory-list">
+                                <li>Smart Conference Room Multimedia System Integration</li>
+                                <li>Structured Cat6A Cabling & UPS Clean Power Backup</li>
+                                <li>Full Engineering Architecture Deployment & Tuning</li>
+                                <li>Strategic IT Consulting, User Onboarding & 1-Year Support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="package-action-column">
+                        <div class="action-box-lock">
+                            <span class="action-caption">Procurement & Implementation</span>
+                            <a href="#request-rfq" class="package-rfq-btn">Request Package Quote</a>
+                            <span class="timeline-indicator">Deployment Timeframe: 4-5 Weeks</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
-    </div>
+    </main>
 </section>
 
-<section class="portfolio">
-<div class="portfolio-filter">
-{% for cat in categories %}
-<button 
-    data-filter="{{ cat.id }}" 
-    class="{% if forloop.first %}active{% endif %}">
-    {{ cat.name }}
-</button>
-{% endfor %}
-</div>
+<style>
+/* ==========================================================================
+   ENTERPRISE SOLUTIONS PACKAGES INTERFACE STYLING
+   ========================================================================== */
 
-<!-- ================== VIDEOS SECTION ================== -->
-<section class="portfolio-section active-port-sec" id="videos-section">
-<section class="services-section" >
-    <div class="hero-overlayh">    
-        <div class="dots">
-        <span class="c-dot active-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        <span class="c-dot"></span>
-        
-    </div>
-<button class="clk click-left" id="nvleft">&#8592;</button>
-<button class="clk click-right" id="nvright">&#8594;</button>
-{% include "portfolio_items.html" %}
-</section>
-</section>
-</section>
-{% include 'form.html' %}
-{% include 'feed.html' %}
-<script src="{% static 'js/portfolio.js' %}"></script>
+.packages-page-wrapper {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ---------------- HERO AREA FORMATTING ---------------- */
+.packages-hero {
+    position: relative;
+    padding: 120px 4% 50px 4%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: #000000;
+}
+
+.packages-hero-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.packages-subtitle {
+    display: block;
+    color: #D4AF37;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.packages-main-title {
+    font-size: clamp(34px, 5vw, 60px);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 0 0 20px 0;
+    letter-spacing: -1.5px;
+}
+
+.packages-lead-text {
+    max-width: 760px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* ---------------- MAIN STRUCTURAL GRID ARRANGEMENT ---------------- */
+.packages-catalog-stack {
+    width: 92%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 0 120px 0;
+}
+
+.stack-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Separates the packages cleanly */
+}
+
+/* Base Configuration Package Block Row */
+.package-deployment-row {
+    width: 100%;
+    background: #070709;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.package-deployment-row:hover {
+    border-color: rgba(212, 175, 55, 0.3);
+    background: #0b0b0e;
+}
+
+/* The Core Blueprint Horizontal Subgrid Map */
+.package-grid-blueprint {
+    display: grid;
+    grid-template-columns: 1.1fr 2fr 0.9fr;
+    gap: 0;
+}
+
+/* 1. Meta Column Details (Left Block) */
+.package-meta-column {
+    padding: 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.package-badge {
+    color: #D4AF37;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.package-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+}
+
+.package-scope-summary {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin: 0 0 24px 0;
+}
+
+.ideal-for-box {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 2px solid #D4AF37;
+    padding: 14px 18px;
+}
+
+.box-label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.ideal-for-box p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* 2. Technical Inventory Columns (Center Block) */
+.package-inventory-column {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.inventory-header {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 1px;
+    margin: 0 0 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    padding-bottom: 10px;
+}
+
+.inventory-subgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.inventory-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inventory-list li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    position: relative;
+    padding-left: 18px;
+}
+
+/* Sophisticated custom metric listing bullet marks */
+.inventory-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 1px;
+    background: #D4AF37;
+}
+
+.inventory-list li strong {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+/* 3. Procurement Action Sidebar (Right Block) */
+.package-action-column {
+    padding: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-box-lock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.action-caption {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.package-rfq-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.package-deployment-row:hover .package-rfq-btn {
+    border-color: #D4AF37;
+    background: #D4AF37;
+    color: #000000;
+}
+
+.timeline-indicator {
+    font-size: 12px;
+    color: #475569;
+    margin-top: 14px;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   BREAKPOINTS MAPPING (RESPONSIVE RETREATS)
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    .package-grid-blueprint {
+        grid-template-columns: 1.3fr 2fr; /* Drops the right column to a double subgrid structure cleanly */
+    }
+    .package-action-column {
+        grid-column: span 2;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+        padding: 24px 40px;
+    }
+    .action-box-lock {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .package-rfq-btn {
+        width: auto;
+        padding: 0 40px;
+    }
+    .action-caption, .timeline-indicator {
+        margin: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .package-grid-blueprint {
+        grid-template-columns: 1fr; /* Convert entirely down to dynamic row stacks */
+    }
+    .package-meta-column, .package-inventory-column, .package-action-column {
+        grid-column: span 1;
+        border-right: none;
+        border-left: none;
+        padding: 30px;
+    }
+    .package-meta-column {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .inventory-subgrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .action-box-lock {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    .package-rfq-btn {
+        width: 100%;
+    }
+}
+</style>
 {% endblock content %}
